@@ -190,19 +190,13 @@
     </propertyfile>
     <copy file="${SRC}/${CLIENT}/build.info" todir="${BUILD}/${CLIENT}/cli"/>
     <copy file="${SRC}/${CLIENT}/build.info" todir="${BUILD}/${CLIENT}/gui"/>
-    <jar jarfile="${DIST}/secureftp2_phase1.jar" basedir="${BUILD}"
-         excludes="**/Icon**, **/jni/**, **/RCS/**, **/bean/**, **/wrapper/**, **/examples/**, **/.*.swp, **/client/gui/images/**, **/resources/**"/>
+    <jar jarfile="${DIST}/secureftp2.jar" basedir="${BUILD}"
+         excludes="**/Icon**, **/jni/**, **/RCS/**, **/bean/**, **/wrapper/**, **/examples/**, **/.*.swp, **/client/gui/images/**, **/resources/**"
+         manifest="manifest/secureftp_manifest.mf"/>
     <jar jarfile="${DIST}/images.jar" basedir="${BUILD}"
          excludes="**/resources/**" includes="**/client/gui/images/**"/>
     <jar jarfile="${DIST}/resources.jar" basedir="${BUILD}"
          includes="**/resources/**"/>
-    <unjar src="${DIST}/secureftp2_phase1.jar" dest="${DIST}/temp/"/>
-    <delete file="${DIST}/secureftp2_phase1.jar" verbose="false"/>
-    <echo>Repackaging client to have our manifest...</echo>
-    <jar jarfile="${DIST}/secureftp2.jar" basedir="${DIST}/temp"
-         excludes="${DIST}/META-INF"
-         manifest="manifest/secureftp_manifest.mf"/>
-    <delete dir="${DIST}/temp" verbose="false"/>
 
     <echo>Packaging applet...</echo>
     <mkdir dir="applet"/>
