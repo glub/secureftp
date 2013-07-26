@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'  ?>
+<!DOCTYPE index
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/index_1_0.dtd">
+<index version="1.0">
+  <indexitem text="добавление закладок" target="add_bookmarks"/>
+  <indexitem text="анонимное соединение" target="connection_dialog"/>
+  <indexitem text="режим ascii" target="transfer_modes"/>
+  <indexitem text="двоичный режим" target="transfer_modes"/>
+  <indexitem text="закладки" target="bookmarks"/>
+  <indexitem text="открытый командный канал" target="connection_dialog"/>
+  <indexitem text="смена каталога" target="nav_interface"/>
+  <indexitem text="сжатие" target="compression"/>
+  <indexitem text="соединение" target="connection_dialog"/>
+  <indexitem text="удаление" target="delete_files"/>
+  <indexitem text="генерация перечня файлов в каталоге" target="dir_list"/>
+  <indexitem text="загрузка" target="download"/>
+  <indexitem text="явное SSL-соединение" target="security_support_explicit"/>
+  <indexitem text="часто задаваемые вопросы" target="faq"/>
+  <indexitem text="брандмауэр" target="support_nat"/>
+  <indexitem text="FTP" target="what_is_ftp"/>
+  <indexitem text="глобальные закладки" target="global_bookmarks"/>
+  <indexitem text="имя узла" target="connection_dialog"/>
+  <indexitem text="неявное SSL-соединение" target="security_support_implicit"/>
+  <indexitem text="управление закладками" target="manage_bookmarks"/>
+  <indexitem text="режим z" target="compression"/>
+  <indexitem text="NAT" target="support_nat"/>
+  <indexitem text="PASV" target="connection_dialog"/>
+  <indexitem text="пассивное соединение" target="connection_dialog"/>
+  <indexitem text="пароль" target="connection_dialog"/>
+  <indexitem text="безопасность" target="security_support"/>
+  <indexitem text="SSL" target="what_is_ssl"/>
+  <indexitem text="текстовый режим" target="transfer_modes"/>
+  <indexitem text="передача данных" target="data_transfer"/>
+  <indexitem text="имя пользователя" target="connection_dialog"/>
+  <indexitem text="выгрузка" target="upload"/>
+</index>
+

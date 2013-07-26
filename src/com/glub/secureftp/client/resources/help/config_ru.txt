@@ -1,0 +1,9 @@
+File ru/bookmarks.html
+File ru/faq.html
+File ru/security.html
+File ru/compression.html
+File ru/transfer.html
+File ru/connection.html
+File ru/modes.html
+File ru/what_is_ftp.html
+File ru/navigation.html

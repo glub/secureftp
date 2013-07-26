@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE toc
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/toc_1_0.dtd">
+
+<toc version="1.0">
+  <tocitem text="Справка по Secure FTP" image="toplevelfolder">
+    <tocitem text="Что такое FTP?" target="what_is_ftp"/>
+    <tocitem text="Безопасность">
+      <tocitem text="Что такое SSL?" target="what_is_ssl"/>
+      <tocitem text="Что поддерживается?" target="security_support"/>
+    </tocitem>
+    <tocitem text="Как установить соединение">
+      <tocitem text="Через диалоговое окно 'Установление соединения'" target="connection_dialog"/>
+      <tocitem text="Через закладки" target="connection_bookmarks"/>
+    </tocitem>
+    <tocitem text="Закладки">
+      <tocitem text="Добавление закладок" target="add_bookmarks"/>
+      <tocitem text="Управление закладками" target="manage_bookmarks"/>
+      <tocitem text="Глобальные закладки" target="global_bookmarks"/>
+    </tocitem>
+    <tocitem text="Навигация">
+      <tocitem text="Через пользовательский интерфейс" target="nav_interface"/>
+      <tocitem text="Путем перетаскивания" target="nav_dragndrop"/>
+    </tocitem>
+    <tocitem text="Передача данных">
+      <tocitem text="Генерация перечня файлов в каталоге" target="dir_list"/>
+      <tocitem text="Загрузка" target="download"/>
+      <tocitem text="Выгрузка" target="upload"/>
+      <tocitem text="Сжатие" target="compression"/>
+    </tocitem>
+    <tocitem text="Технические подробности">
+      <tocitem text="Режимы передачи" target="transfer_modes"/>
+      <tocitem text="Можно ли восстановить удаленные файлы?" target="delete_files"/>
+      <tocitem text="Поддержка NAT" target="support_nat"/>
+    </tocitem>
+  </tocitem>
+</toc>
+
+

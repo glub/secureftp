@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE toc
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/toc_1_0.dtd">
+
+<toc version="1.0">
+  <tocitem text="Aide sur Secure FTP" image="toplevelfolder">
+    <tocitem text="Qu'est-ce que FTP?" target="what_is_ftp"/>
+    <tocitem text="Sécurité">
+      <tocitem text="Qu'est-ce que SSL?" target="what_is_ssl"/>
+      <tocitem text="Qu'est-ce qui est supporté?" target="security_support"/>
+    </tocitem>
+    <tocitem text="Comment se connecter?">
+      <tocitem text="Via la boîte de dialogue Ouvrir une Connexion" target="connection_dialog"/>
+      <tocitem text="Via les signets" target="connection_bookmarks"/>
+    </tocitem>
+    <tocitem text="Signets">
+      <tocitem text="Ajouter des signets" target="add_bookmarks"/>
+      <tocitem text="Gérer les signets" target="manage_bookmarks"/>
+      <tocitem text="Signets globaux" target="global_bookmarks"/>
+    </tocitem>
+    <tocitem text="Navigation">
+      <tocitem text="Via l'interface utilisateur" target="nav_interface"/>
+      <tocitem text="Via glisser-déposer" target="nav_dragndrop"/>
+    </tocitem>
+    <tocitem text="Transférer des données">
+      <tocitem text="Listage du répertoire" target="dir_list"/>
+      <tocitem text="Télécharger" target="download"/>
+      <tocitem text="Charger" target="upload"/>
+      <tocitem text="Compression" target="compression"/>
+    </tocitem>
+    <tocitem text="Sujets avancés">
+      <tocitem text="Modes de transfert" target="transfer_modes"/>
+      <tocitem text="Puis-je restaurer des fichiers effacés?" target="delete_files"/>
+      <tocitem text="Support du NAT" target="support_nat"/>
+    </tocitem>
+  </tocitem>
+</toc>
+
+

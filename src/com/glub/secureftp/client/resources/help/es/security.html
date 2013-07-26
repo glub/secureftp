@@ -1,0 +1,64 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html; charset=UTF8"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff"> <a name="ssl"></a> <h2>¿Qué es SSL?</h2>
+
+SSL, o <i>Capa de Sockets Segura,</i> es una tecnología segura diseñada por
+Netscape Communications para habilitar la comunicación encriptada y autenticada.
+SSL es visible cuando se usa en comunicaciones entre navegadores Web y servidores Web
+(las URLs que comienzan con <i>https</i> indican que la conexión que se va a usar
+es SSL). 
+
+<br><br>
+
+Secure FTP amplía esta tecnología para permitir la transferencia de archivos
+mediante una conexión segura (el servidor FTP soporta conexiones SSL).
+
+<a name="support"></a> <h2>¿Qué está soportado?</h2>
+
+Secure FTP ofrece dos opciones de conexión SSL: conexiones implícita y
+explícita.
+
+<a name="implicit"></a> <h3>SSL Implícito</h3>
+
+La seguridad implícita (también conocida como seguridad pasiva), comienza
+con una conexión SSL en el momento en el que ésta se establece. Con
+seguridad implícita, el servidor define un puerto diferente para el cliente 
+FTP (el puerto es normalmente el 990) para que se use en la conexión segura.
+Atención: El SSl implícito fue inicialmente definido en varias versiones de FTPs pero 
+actualmente está en desuso.
+
+<a name="explicit"></a> <h3>SSL Explícito</h3>
+
+La seguridad explícita (también conocida como seguridad activa), comienza con
+una conexion básica FTP (insegura) donde un comando especial, <i>AUTH SSL,</i> 
+le indica al servidor que cambie a un modo seguro. La especificación se 
+define formalmente en RFC 2228.
+
+<a name="client"></a> <h3>Certificados de Clientes</h3>
+
+Un modo adicional de autenticar un cliente en un servidor es usando la 
+autenticación cliente SSL. Esta forma de autenticación no ocurre durante el
+proceso de login, sino cuando se realiza la conexión segura inicial.
+
+<br><br>
+
+Secure FTP ofrece dos maneras de establecer y enviar un certificado de cliente:
+
+<ol> <li>Generar un certificado de autofirma. Este certificado puede ser generado
+al responder a unas simples questiones, y es válido durante 3 años.<p> <li>Utilice
+un par clave/certificado establecido de un administrador.
+Si su compañía posee su propio Certificado de Autoridad, puede importar la clave privada
+y publicar el certificado en el cliente. La clave privada necesita estar en un almacén de claves
+PKCS#12, o sola en formato PKCS#8. Los certificados públicos/CA necesitan estar en un 
+almacén de claves PKCS#12, o solos en los formatos PEM o DER.<p> <li>Si el par certificado/clave
+está protegido por una frase-contraseña, escriba esa frase-contraseña en
+el campo apropiado. </ol>
+
+Estas opciones se pueden encontrar en el elemento del menú
+de Certificados de Gestión de <i>Ayuda &gt;
+
+<br>
+
+</body> </html>

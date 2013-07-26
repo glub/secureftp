@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'  ?>
+<!DOCTYPE index
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/index_1_0.dtd">
+<index version="1.0">
+  <indexitem text="Lesezeichen hinzufügen" target="add_bookmarks"/>
+  <indexitem text="Anonym" target="connection_dialog"/>
+  <indexitem text="Ascii-Modus" target="transfer_modes"/>
+  <indexitem text="Binärer Modus" target="transfer_modes"/>
+  <indexitem text="Lesezeichen" target="bookmarks"/>
+  <indexitem text="ccc" target="connection_dialog"/>
+  <indexitem text="Verzeichnis wechseln" target="nav_interface"/>
+  <indexitem text="Kompression" target="compression"/>
+  <indexitem text="Verbinden" target="connection_dialog"/>
+  <indexitem text="Löschen" target="delete_files"/>
+  <indexitem text="Inhaltsangabe eines Verzeichnisses" target="dir_list"/>
+  <indexitem text="Herunterladen" target="download"/>
+  <indexitem text="Offenes SSL" target="security_support_explicit"/>
+  <indexitem text="F&amp;A" target="faq"/>
+  <indexitem text="Firewall" target="support_nat"/>
+  <indexitem text="FTP" target="what_is_ftp"/>
+  <indexitem text="Absolute Lesezeichen" target="global_bookmarks"/>
+  <indexitem text="Name des Ziel-Rechners" target="connection_dialog"/>
+  <indexitem text="Stilles SSL" target="security_support_implicit"/>
+  <indexitem text="Lesezeichen verwalten" target="manage_bookmarks"/>
+  <indexitem text="Z-Modus" target="compression"/>
+  <indexitem text="NAT" target="support_nat"/>
+  <indexitem text="PASV" target="connection_dialog"/>
+  <indexitem text="Passiv" target="connection_dialog"/>
+  <indexitem text="Passwort" target="connection_dialog"/>
+  <indexitem text="Sicherheit" target="security_support"/>
+  <indexitem text="SSL" target="what_is_ssl"/>
+  <indexitem text="Text-Modus" target="transfer_modes"/>
+  <indexitem text="Datenübertragung" target="data_transfer"/>
+  <indexitem text="Benutzername" target="connection_dialog"/>
+  <indexitem text="Hinaufladen" target="upload"/>
+</index>

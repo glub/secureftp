@@ -1,0 +1,14 @@
+#!/bin/tcsh
+
+set PWD = `pwd`
+set BINDIR = $PWD/javahelp/bin
+cd $BINDIR/../../src/com/glub/secureftp/client/resources/help
+$BINDIR/jhindexer -c config_en.txt -verbose
+$BINDIR/jhindexer -db JavaHelpSearch_ja -locale ja_JP -c config_ja.txt -verbose 
+$BINDIR/jhindexer -db JavaHelpSearch_ru -c config_ru.txt -verbose
+$BINDIR/jhindexer -db JavaHelpSearch_fr -c config_fr.txt -verbose
+$BINDIR/jhindexer -db JavaHelpSearch_pt -c config_pt.txt -verbose 
+$BINDIR/jhindexer -db JavaHelpSearch_pt_BR -c config_pt_BR.txt -verbose
+$BINDIR/jhindexer -db JavaHelpSearch_de -c config_de.txt -verbose
+$BINDIR/jhindexer -db JavaHelpSearch_es -c config_es.txt -verbose
+

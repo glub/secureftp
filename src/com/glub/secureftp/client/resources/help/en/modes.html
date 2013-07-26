@@ -1,0 +1,36 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html; charset=UTF8"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff">
+
+<h2>Transfer Modes</h2>
+
+There are three modes of data transfers: auto, binary and text (ASCII).
+Files are handled differently when it's a plain text document versus all
+the other file types.
+
+<br><br>
+
+When <i>text</i> is set as the transfer mode, the server may change the
+line endings of the file. That is, return characters may be replaced
+with your system's return character. This allows for properly formatted text 
+files.
+
+<br><br>
+
+However, bad things can happen if you apply a text mode to binary files
+(such as Word documents). Here you would want the server to not
+interpret anything in the file and just send it as is.
+
+<br><br>
+
+If you don't want to have to change between transfer modes, it's best to
+set the mode to <i>auto</i> and let Secure FTP decide which is best.
+
+<br>
+
+</body>
+
+</html>
+

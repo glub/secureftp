@@ -1,0 +1,39 @@
+<html>
+
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF8"><LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff">
+
+<h2>Questions fréquemment posées</h2>
+
+<h3>Puis-je restaurer des fichiers effacé?</h3>
+
+En bref, non. Lorsqu'on efface des fichiers sur le serveur distant, il n'y a pas de
+<i>Corbeille</i> ou <i>Casier à récupération;</i> les fichiers sont donc définitivement supprimés.
+En local, il se peut que votre système supporte la restauration de fichiers, mais comme Secure FTP
+est indépendant de la plateforme, il ne nous est pas possible de fournir une telle fonctionnalité.
+
+<h3>Support du NAT</h3>
+
+NAT, ou <i>Network Address Translation,</i> est de plus en plus
+utilisé. Si vous utilisez un pare-feu ou un autre dispositif qui fait correspondre plusieurs
+adresses IP à une seule adresse IP, vous utilisez probablement le NAT. 
+
+Le seul cas où vous devez vous préoccuper du NAT avec Secure FTP, est celui 
+où vous n'utilisez <b>pas</b> le type de connexion <a href="connection.html">passif</a>.
+
+Si vous êtes derrière du NAT et souhaitez établir une connexion sécurisée,
+vous devez soit utiliser une connexion passive, soit sélectionner l'option 
+<a href="connection.html#ccc">Canal de commande en clair</a> si vous utilisez une connexion active (PORT),
+sinon votre <a href="transfer.html">transfert de données</a> échouera.
+Ceci provient du fait que pendant une connexion FTP non sécurisée, votre dispositif de NAT
+écoute réellement les commandes FTP et effectue correctement le routage d'adresse.
+Par contre, lorsque la connexion est sécurisée, le dispositif de NAT ne peut pas retrouver les informations
+nécessaires au routage des adresses. Avec une connexion de type passif, NAT n'a pas à se préoccuper
+de ce problème.
+
+<br>
+
+</body>
+
+</html>

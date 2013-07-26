@@ -1,0 +1,22 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html; charset=UTF8"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff">
+
+<h2>Fragen & Antworten</h2>
+
+<h3>Kann ich gel&ouml;schte Dateien wiederherstellen?</h3>
+
+Kurz und b&uuml;ndig: nein. Auf dem Zielrechner Dateien gibt es keinen <i>Papierkorb</i> oder <i>M&uuml;lleimer</i>, so dass Dateien sofort gel&ouml;scht werden. Ihr Betriebssystem auf Ihrem Rechner mag das Wiederherstellen beherrschen, aber da Secure FTP plattform-unabh&auml;ngig ist k&ouml;nnen wir diese Funktion nicht bieten.
+
+<h3>Unterst&uuml;tzung f&uuml;r NAT</h3>
+
+NAT (Network Address Translation), oder <i>Netzwerk-Adress-Umsetzung</i>, wird immer &ouml;fter eingesetzt. Wenn Sie eine Firewall oder eine andere Vorrichtung verwenden, die Ihnen statt einer IP deren viele zur Verf&uuml;gung stellt, stehen die Chancen gut, dass Sie NAT einsetzen. Wenn Sie NAT und Secure FTP verwenden m&uuml;ssen Sie beachten, ob Sie <b>eine</b> <a href="connection.html">passive</a> Verbindungsart einsetzen. Wenn Sie jenseits einer NAT sind und eine gesicherte Verbindung aufbauen wollen m&uuml;ssen Sie entweder eine passive Verbindung w&auml;hlen oder die Option f&uuml;r den <a href="connection.html#ccc">Clear
+Command Channel</a> zusammen mit einer aktiven (PORT) Verbindung einschalten. Sonst wird die <a href="transfer.html">Datei&uuml;bertragung</a> scheitern. Dies geschieht, weil Ihre NAT-Einrichtung w&auml;hrend einer unsicheren FTP-Verbindung auf FTP-Befehle achtet und Adressen korrekt weiterleitet. Wenn die Verbindung aber gesichert ist kann NAT nicht mitlauschen und korrekt arbeiten. Wenn die Verbindung passiv ist ist NAT nicht betroffen.
+
+<br>
+
+</body>
+
+</html>

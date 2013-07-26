@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'  ?>
+<!DOCTYPE index
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/index_1_0.dtd">
+<index version="1.0">
+  <indexitem text="ajouter des signets" target="add_bookmarks"/>
+  <indexitem text="anonyme" target="connection_dialog"/>
+  <indexitem text="mode texte" target="transfer_modes"/>
+  <indexitem text="mode binaire" target="transfer_modes"/>
+  <indexitem text="signets" target="bookmarks"/>
+  <indexitem text="ccc" target="connection_dialog"/>
+  <indexitem text="changer de répertoire" target="nav_interface"/>
+  <indexitem text="compression" target="compression"/>
+  <indexitem text="connexion" target="connection_dialog"/>
+  <indexitem text="supprimer" target="delete_files"/>
+  <indexitem text="listage du répertoire" target="dir_list"/>
+  <indexitem text="télécharger" target="download"/>
+  <indexitem text="SSL explicite" target="security_support_explicit"/>
+  <indexitem text="FAQ" target="faq"/>
+  <indexitem text="pare-feu" target="support_nat"/>
+  <indexitem text="FTP" target="what_is_ftp"/>
+  <indexitem text="signets globaux" target="global_bookmarks"/>
+  <indexitem text="nom d'hôte" target="connection_dialog"/>
+  <indexitem text="SSL implicite" target="security_support_implicit"/>
+  <indexitem text="gérer les signets" target="manage_bookmarks"/>
+  <indexitem text="mode z" target="compression"/>
+  <indexitem text="NAT" target="support_nat"/>
+  <indexitem text="PASV" target="connection_dialog"/>
+  <indexitem text="passif" target="connection_dialog"/>
+  <indexitem text="mot de passe" target="connection_dialog"/>
+  <indexitem text="sécurité" target="security_support"/>
+  <indexitem text="SSL" target="what_is_ssl"/>
+  <indexitem text="mode texte" target="transfer_modes"/>
+  <indexitem text="transférer des données" target="data_transfer"/>
+  <indexitem text="nom d'utilisateur" target="connection_dialog"/>
+  <indexitem text="charger" target="upload"/>
+</index>
+

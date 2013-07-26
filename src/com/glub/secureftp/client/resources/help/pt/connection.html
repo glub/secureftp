@@ -1,0 +1,79 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html; charset=UTF8"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff"> <h2>Como ligar-se Via Diálogo de Abertura de Ligação</h2>
+
+<center>
+
+<img src="images/openConnection.png">
+
+</center>
+
+<p> <br>
+
+Ligar-se a um servidor é um processo bastante simples. No mínimo, 
+precisará conhecer algumas informações básicas, incluindo o nome do 
+servidor (sistema hospedeiro ou "host"), o nome de utilizador e a 
+palavra-passe.
+
+<br><br>
+
+O <i>nome do servidor</i> é o nome da máquina a que pretende ligar-se. O 
+<i>nome de utilizador</i> é o nome que vai utilizar para efectuar a 
+entrada no sistema ("login") dessa máquina. A <i>palavra-passe</i> é a 
+chave que permite que o seu nome de utilizador entre no sistema. Nalguns 
+casos poderá entrar no sistema <i>anonimamente,</i> caso em que poderá 
+ter menos privilégios que um utilizador normal.
+
+<br><br>
+
+Por defeito, nós tentaremos fazer uma ligação <a 
+href="security.html#ssl">SSL explícita</a>. Se esta ligação falhar, será 
+notificado e ser-lhe-á oferecido efectuar uma ligação insegura. <font 
+color="red">Nota:</font> Deverá escolher esta opção com cuidado. Se 
+permitir esta ligação, a sua palavra-passe e os seus dados ficam 
+publicamente expostos.
+
+<br><br>
+
+No diálogo de Abertura de Ligação poderá também especificar uma pasta 
+<i>remota</i> e uma pasta <i>local</i> de início, para as quais o 
+programa irá, uma vez obtida entrada com sucesso no sistema remoto.
+
+
+<br><br>
+
+Poderá também definir o <i>tipo de ligação.</i> Por defeito é adoptado o 
+tipo de ligação <i>passivo</i>, que para a maioria dos utilizadores será 
+suficiente. O que isto significa é que quando é feita uma transferência 
+de dados, o servidor decidirá onde o utilizador se irá ligar. Se estiver 
+atrás de uma barreira de protecção ("firewall") <a 
+href="faq.html#nat">NAT</a>, vai querer ter esta opção seleccionada ou, 
+se o sistema suportar, será estabelecida uma ligação <a 
+href="security.html#ssl">SSL explícita</a>, seleccione a opção <a 
+href="#ccc">Canal de Comando Visível</a> e a opção passivo não 
+seleccionada.
+
+<br><br>
+
+<a name="ccc"></a> A opção <i>Canal de Comando Visível</i> está 
+disponível apenas quando se faz uma ligação <a 
+href="security.html#ssl">SSL explícita</a>. Depois de o utilizador ser 
+autenticado seguramente, o canal de comando (ou controle) é revertido 
+para anular a ligação. Esta opção permite aos utilizadores atrás de uma 
+barreira de protecção ("firewall") (<a href="faq.html#nat">NAT</a>) 
+conseguirem que ligações de dados activas (Porta), funcionem.
+
+<br><br>
+
+Se gravar estas opções nos seus marcadores poderá aceder-lhes através do 
+menu Marcadores ou da opção Perfil no diálogo de Abertura de Ligação. 
+Poderá obter mais informações acerca de Marcadores <a
+href="bookmarks.html">aqui</a>.
+
+<br>
+
+</body>
+
+</html>

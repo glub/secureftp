@@ -1,0 +1,373 @@
+# (C) Copyright by Glub Tech, Inc. 1999-2008.
+# All Rights Reserved.
+
+Menu.file=Fichero  
+Menu.mnemonic.file=F
+Menu.file.connect=Conectar
+Menu.file.mnemonic.connect=C
+Menu.file.disconnect=Desconectar
+Menu.file.mnemonic.disconnect=D
+Menu.file.exit=Salir
+Menu.file.mnemonic.exit=x    
+Menu.file.mnemonic.chdir=G
+Menu.file.prefs=Preferencias
+Menu.file.mnemonic.prefs=P
+
+Menu.local.mnemonic.select=A
+Menu.local.mnemonic.rename=e
+Menu.local.mnemonic.delete=t
+Menu.local.mnemonic.chdir=G
+
+Menu.remote=Remoto
+Menu.mnemonic.remote=R
+Menu.remote.chdir=Ir a carpeta
+Menu.remote.new_folder=Nueva Carpeta...
+Menu.remote.rename=Renombrar...
+Menu.remote.raw=Enviar Comando Raw...
+Menu.remote.mnemonic.download=D
+Menu.remote.mnemonic.upload=U
+Menu.remote.mnemonic.refresh=R
+Menu.remote.mnemonic.new_folder=N
+Menu.remote.mnemonic.chdir=G
+Menu.remote.mnemonic.rename=e
+Menu.remote.mnemonic.delete=t
+Menu.remote.mnemonic.raw=w
+Menu.remote.info=Obtener Info
+Menu.remote.mnemonic.info=I
+
+Menu.transfer=Modo de trasnsferencia
+Menu.mnemonic.transfer=T
+Menu.transfer.mnemonic.auto=A
+Menu.transfer.mnemonic.ascii=T
+Menu.transfer.mnemonic.binary=B
+Menu.transfer.mnemonic.ebcdic=E
+
+Menu.bookmarks=Favoritos
+Menu.mnemonic.bookmarks=B                                       
+Menu.bookmarks.add=Añadir a favoritos...
+Menu.bookmarks.mnemonic.add=A
+Menu.bookmarks.edit=Gestión de favoritos...
+Menu.bookmarks.mnemonic.edit=M
+
+Menu.window=Ventana
+Menu.mnemonic.window=W
+Menu.help=Ayuda
+Menu.mnemonic.help=H
+Menu.help.help=Ayuda...
+Menu.help.mnemonic.help=H
+Menu.help.about=Sobre Secure FTP...
+Menu.help.mnemonic.about=A
+Menu.help.register=Registrar Secure FTP...
+Menu.help.mnemonic.register=R
+Menu.help.update=Comprobar actualizaciones...
+Menu.help.mnemonic.update=u
+Menu.help.cert_manager=Gestión de certificados... 
+Menu.help.mnemonic.cert_manager=C
+
+AboutBox.dialogTitle=Sobre Secure FTP  
+
+Toolbar.connect=Conectar
+Toolbar.tooltip.connect=Conectar a un servidor FTP
+Toolbar.disconnect=Desconectar
+Toolbar.tooltip.disconnect=Desconectar de servidor FTP
+Toolbar.xferMode.tooltip.auto=Modo de autotrasnferencia
+Toolbar.xferMode.tooltip.ascii=Modo de transferencia de texto
+Toolbar.xferMode.tooltip.binary=Modo de transferencia binario
+Toolbar.xferMode.tooltip.ebcdic=Modo de transferencia EBCDIC
+
+Common.button.cancel=Cancelar
+Common.button.chdir=Ir a Carpeta
+Common.button.close=Cerrar
+Common.button.connect=Conectar
+Common.button.delete=Eliminar
+Common.button.download=Descargar
+Common.button.new_folder=Nueva Carpeta
+Common.button.change=Cambiar
+Common.button.ok=OK
+Common.button.yes=Si
+Common.button.no=No
+Common.button.refresh=Refrescar
+Common.button.remove=Eliminar
+Common.button.rename=Renombrar
+Common.button.save=Guardar
+Common.button.select_all=Seleccionar Todo
+Common.button.select_folder=Seleccionar Carpeta
+Common.button.select_file=Seleccionar Fichero
+Common.button.upload=Cargar
+Common.button.true=verdadero
+Common.button.false=falso
+Common.dialogTitle.error=Error Secure FTP  
+Common.dialogTitle.warning=Aviso Secure FTP   
+Common.dateFormat=d/M/yyyy
+Common.machineName=Mi Equipo
+Common.machineName.mac_os=Equipo
+Common.timeDateFormat=d/M/yyyy HH:mm
+Common.tooltip.chdir=Ir a nueva carpeta
+Common.tooltip.delete=Eliminar fichero o carpeta
+Common.tooltip.download=Descargar fichero o carpeta
+Common.tooltip.new_folder=Crear nueva carpeta
+Common.tooltip.refresh=Refrescar el listado de directorio
+Common.tooltip.rename=Renombrar un fichero o carpeta
+Common.tooltip.stop=Cancelar operación
+Common.tooltip.upload=Cargar un archivo o carpeta   
+Common.connection_lost=Conexión perdida
+Common.xferMetric.bytes=bytes
+Common.xferMetric.kb=KB
+Common.xferMetric.mb=MB
+Common.xferMetric.gb=GB
+Common.xferMode.auto=Auto
+Common.xferMode.ascii=Texto
+Common.xferMode.binary=Binario
+Common.xferMode.ebcdic=EBCDIC                                                     
+Common.unknown.error=ha ocurrido el siguiente error: [^0]
+
+ConnectThread.makeInsecureConnection=Una conexion segura (SSL explicito) podria no estar establecida.\n¿Desea continuar con una conexión insegura?
+ConnectThread.unknownHost=[^0]: host desconocido
+ConnectThread.connectionFailed.dialogTitle=Conexión fallida
+ConnectThread.connectionFailed1=La conexión ha fallado: [^0]
+ConnectThread.connectionFailed2=[^0]: La conexión ha fallado
+ConnectThread.loginFailed=[^0]: El login ha fallado
+ConnectThread.loginFailed.dialogTitle=Login erróneo
+ConnectThread.cccNotSupported=La petición de Canal de Comando Clear no está soportada por el servidor.
+
+ConnectionDialog.connectPanelTab=Conexión
+ConnectionDialog.optionsPanelTab=Opciones
+ConnectionDialog.savePasswordCheckBox=Guardar contraseña
+ConnectionDialog.anonymousCheckBox=Anónimo
+ConnectionDialog.securityMode=Modo de seguridad:
+ConnectionDialog.dataEncryption=Encriptación de Datos:
+ConnectionDialog.ccc=Canal de comando Clear:
+ConnectionDialog.securityMode.none=Ninguno
+ConnectionDialog.securityMode.explicitSSL=SSL Explícito
+ConnectionDialog.securityMode.implicitSSL=SSL Implícito
+ConnectionDialog.dataEncryptionCheckBox=Permitido
+ConnectionDialog.cccCheckBox=Permitido (después de la autenticación)
+ConnectionDialog.cccToolTip=<html>Habilitar esto durante una conexión segura SSl explícita<br>para soportar una conexión de datos con un cortafuegos (NAT).</html>
+ConnectionDialog.port=Puerto:
+ConnectionDialog.startingRemoteFolder=Directorio Remoto:
+ConnectionDialog.startingLocalFolder=Directorio Local:
+ConnectionDialog.connectionType=Tipo de Conexión:
+ConnectionDialog.connectionTypeCheckBox=Pasivo
+ConnectionDialog.tooltip.browse=Navegar
+ConnectionDialog.proxy=Proxy:
+ConnectionDialog.proxyCheckBox=Habilitado
+ConnectionDialog.closeTab.warning=Está a punto de desconectarse del servidor.
+
+OpenConnectionDialog.dialogTitle=Abrir Conexión
+OpenConnectionDialog.profile=Perfil:
+OpenConnectionDialog.hostname=Nombre del Host:
+OpenConnectionDialog.username=Nombre de usuario:
+OpenConnectionDialog.password=Contraseña:
+OpenConnectionDialog.saveBookmarkCheckBox=Guardar en Favoritos
+OpenConnectionDialog.defaultComboBoxText=Ninguno
+
+AddBookmarkDialog.dialogTitle=Añadir a Favoritos
+AddBookmarkDialog.loadBookmarkError=Ha ocurrido un error cargando los favoritos: [^0]
+AddBookmarkDialog.loadGlobalBookmarkError=Ha sido imposible conectarse a [^0] para cargar los favoritos
+AddBookmarkDialog.saveBookmarkError=Ha habido un problema al guardar los favoritos: [^0]
+
+EditBookmarkDialog.dialogTitle=Editar Favorito
+
+EditBookmarksDialog.dialogTitle=Gestión de Favoritos
+EditBookmarksDialog.button.up=Arriba
+EditBookmarksDialog.button.down=Abajo
+EditBookmarksDialog.button.add=Añadir
+EditBookmarksDialog.button.edit=Editar
+EditBookmarksDialog.button.delete=Eliminar
+EditBookmarksDialog.button.close=Cerrar
+EditBookmarksDialog.column.bookmark=Favorito
+EditBookmarksDialog.column.hostname=Nombre del Host
+EditBookmarksDialog.column.username=Nombre de Usuario
+EditBookmarksDialog.failedToWriteBookmarks=Error al escribir los favoritos.
+EditBookmarksDialog.hostName=Host: [^0]
+EditBookmarksDialog.userName=Usuario: [^0]
+EditBookmarksDialog.securityMode=Modo de Seguridad: [^0]
+EditBookmarksDialog.dataEncryption=Encriptación de Datos: [^0]
+EditBookmarksDialog.clearCommandChannel=Canal de Comando Clear: [^0]
+EditBookmarksDialog.localDir=Abriendo Directorio Local: [^0]
+EditBookmarksDialog.remoteDir=Abriendo Directorio Remoto: [^0]
+EditBookmarksDialog.pasv=Conexion pasiva: [^0]
+EditBookmarksDialog.proxy=Usar Proxy: [^0]
+EditBookmarksDialog.noDir=ninguno
+EditBookmarksDialog.read_only=[^0] (Solo lectura)
+
+MakingConnectionDialog.dialogTitle=Realizando la Conexión...
+MakingConnectionDialog.connectingTo=Conectando con:
+
+AuthenticationDialog.dialogTitle=Autenticación de Usuario
+
+DeleteDialog.confirmation.title=Eliminar Confirmación
+DeleteDialog.confirmation.one_file=Está a punto de eliminar \"[^0]\".
+DeleteDialog.confirmation.mult_files=Está a punto de eliminar definitivamente varios archivos.
+DeleteDialog.no_file=Archivo o directorio no encontrado.
+DeleteDialog.permission_denied=Permiso denegado: La eliminación de \"[^0]\" ha fallado.
+
+RenameDialog.label.name=Nombre:
+
+InfoDialog.title=Información del archivo
+InfoDialog.filename=Nombre:
+InfoDialog.date=Fecha:
+InfoDialog.size=Tamaño:
+InfoDialog.perms=Propiedad & Permisos:
+InfoDialog.user=Usuario:
+InfoDialog.group=Grupo:
+InfoDialog.others=Otros:
+InfoDialog.access=Acceso:
+InfoDialog.rw=Lectura & Escritura
+InfoDialog.ro=Sólo lectura
+InfoDialog.wo=Sólo escritura (Drop Box)                                                     
+InfoDialog.noAccess=No Hay Acceso
+
+MkDirDialog.label.name=Directorio:
+MkDirDialog.permission_denied=Permiso denegado.
+MkDirDialog.permission_denied_verbose=El directorio \"[^0]\" no se ha podido crear. Permiso denegado.
+MkDirDialog.dir_exists=El directorio ya existe.
+
+CDCommand.chdir=Ir a:
+CDCommand.noSuchDir=[^0]: Directorio no encontrado.
+CDCommand.permission_denied=[^0]: Permiso denegado.
+
+RawCommand.title=Enviar Comando Raw
+RawCommand.label=Comando:
+
+FileListPanel.fileName=Nombre
+FileListPanel.fileSize=Tamaño
+FileListPanel.dateModified=Fecha Modificada
+FileListPanel.owner=Propietario
+FileListPanel.permissions=Permisos
+FileListPanel.tooltip.upDir=Subir un directorio
+
+Log.clear=Limpiar log      
+Log.save=Guardar log...    
+
+LocalPanel.name=Su Equipo
+RemotePanel.tooltip.certInfo=Certificar Información
+
+RemoteView.numOfItem=[^0] elemento
+RemoteView.numOfItems=[^0] elementos
+
+DataTransferDialog.title=Transferencia de Archivos
+DataTransferDialog.percentDone=[^0]% completado
+DataTransferDialog.download=Descargando:
+DataTransferDialog.upload=Cargando:
+DataTransferDialog.timeLeftBase=Tiempo restante estimado:                                                                      
+DataTransferDialog.timeLeft=Tiempo restante estimado: [^0] ([^1] [^2] of [^3] [^4] copiados)
+DataTransferDialog.transferRateBase=Ratio de transferencia:
+DataTransferDialog.transferRate=Ratio de transferencia: [^0] [^1]/sec
+DataTransferDialog.bytesXferBase=Datos Transferidos: [^0] [^1] copiados
+
+DataTransfer.file_not_found=Archivo no encontrado.
+DataTransfer.transfer_failed=La transferencia de datos ha fallado: [^0]
+DataTransfer.remote_file_smaller=El archivo remoto es mas pequeño que el archivo local.
+DataTransfer.remote_file_larger=El archivo remoto es mas grande que el archivo local.
+DataTransfer.remote_file_older=El archivo remoto es mas antiguo que el archivo local.
+DataTransfer.remote_file_newer=El archivo remoto es mas reciente que el archivo local.
+DataTransfer.remote_file_smaller_older=El archivo remoto es mas pequeño y antiguo que el archivo local.
+DataTransfer.remote_file_smaller_newer=El archivo remoto es mas pequeño y reciente que el archivo local.
+DataTransfer.remote_file_larger_older=El archivo remoto es mas grande y antiguo que el archivo local.
+DataTransfer.remote_file_larger_newer=El archivo remoto es mas grande y reciente que el archivo local.
+DataTransfer.file_exists.title=El archivo ya existe.
+DataTransfer.file_exists=El archivo \"[^0]\" ya existe.
+DataTransfer.options.title=Opciones
+DataTransfer.button.replace=Reemplazar
+DataTransfer.button.resume=Resumen
+DataTransfer.button.skip=Omitir
+DataTransfer.button.apply_to_all=Aplicar a todos
+
+EditCertificatesDialog.dialogTitle=Gestión de Certificados
+EditCertificatesDialog.column.certificate=Certificar
+EditCertificatesDialog.tab.cert=Certificados de Confianza
+EditCertificatesDialog.tab.client_cert=Certificado Personal
+EditCertificatesDialog.cert.private=Clave Privada:
+EditCertificatesDialog.cert.public=Clave Publica:
+EditCertificatesDialog.cert.ca=Certificado CA:       
+EditCertificatesDialog.cert.pass=Frase de seguridad:
+EditCertificatesDialog.client.border=Su Certificado
+EditCertificatesDialog.button.generate=Generar Certificado...
+EditCertificatesDialog.expires_cert=Caduca: [^0]
+EditCertificatesDialog.filter.cert=Archivos de Certificados (*.pem, *.der, *.pfx, *.p12)
+EditCertificatesDialog.filter.key=Claves Privadas (*.pk8, *.pfx, *.p12)
+
+GenerateCertificateDialog.dialogTitle=Generar Certificado
+GenerateCertificateDialog.button.generate=Generar
+GenerateCertificateDialog.cert.cn=Su Nombre:
+GenerateCertificateDialog.cert.o=Nombre de la Compañía:
+GenerateCertificateDialog.cert.ou=Departamento de la Compañía:
+GenerateCertificateDialog.cert.city=Ciudad:
+GenerateCertificateDialog.cert.state=Región:
+GenerateCertificateDialog.cert.country=País:
+GenerateCertificateDialog.cn.error=Escriba su nombre.
+GenerateCertificateDialog.o.error=Escriba el nombre de compañía.
+GenerateCertificateDialog.ou.error=Escriba su departamento.
+GenerateCertificateDialog.city.error=Escriba su ciudad.
+GenerateCertificateDialog.state.error=Escriba su región.
+GenerateCertificateDialog.country.error=Escriba su país.
+
+SSLCertificate.button.deny=Denegar
+SSLCertificate.button.grant_always=Autorizar Siempre
+SSLCertificate.button.grant_once=Autorizar esta sesión
+SSLCertificate.certificate.title=Certificar Información
+SSLCertificate.new_certificate.title=Nuevo Certificado Encontrado
+SSLCertificate.replace_certificate.title=Certificado Diferente Encontrado 
+SSLCertificate.date_valid.label=Este certificado es válido de [^0] a [^1]
+SSLCertificate.issued_to.label=Certificado:
+SSLCertificate.issued_from.label=Publicado por:                       
+SSLCertificate.key_length.label=Tamaño de clave: [^0] bits                 
+SSLCertificate.key_strength.label=Nivel de encriptación: [^0] bits      
+SSLCertificate.fingerprint.label=Certificar huella digital:             
+SSLCertificate.serial_number.label=Código de Licencia:
+SSLCertificate.warning.title=Aviso de Certificado
+SSLCertificate.no_cert=El servidor no ha enviado el certificado. ¿Desea continuar de todos modos?
+SSLCertificate.expired_cert=El certificado del servidor ha caducado. ¿Desea continuar de todos modos?
+SSLCertificate.invalid_cert=El certificado del servidor ya no es válido. ¿Desea continuar de todos modos?
+SSLCertificate.host_mismatch=El host especificado en el certificado no concuerda con el host al que está conectado. ¿Desea continuar de todos modos?
+SSLCertificate.null_cert=El certificado es nulo. ¿Desea continuar de todos modos?
+
+Update.title=Actualización de Software
+Update.checkbox.auto=Comprobación automática para las actualizaciones
+Update.up_to_date=Su versión está actualizada.
+Update.new_version=Hay una nueva versión disponible: v[^0].\n¿Desea descargar la actualización?
+Update.button.select_folder=Seleccione un directorio para la actualización
+Update.success=La actualización ha sido descargada correctamente en [^0]. Debe desinstalar esta versión para que el instalador se ejecute correctamente.
+Update.failed_to_connect=Ha sido imposible realizar la conexión con el servidor.
+
+Prefs.title=Preferencias
+Prefs.global_book_url=Global Bookmarks URL:
+Prefs.proxy.title=SOCKS Proxy:
+Prefs.proxy_host=Nombre del Host:
+Prefs.proxy_port=Puerto:
+Prefs.proxy_user=Nombre de Usuario:
+Prefs.proxy_pass=Contraseña:
+Prefs.show_hidden_files=Mostrar archivos ocultos
+Prefs.show_full_column_listing=Mostrar información del directorio remoto
+Prefs.start_with_open=Mostrar el diálogo de Abrir Conexión al inicio
+Prefs.check_for_updates=Comprobar actualizaciones al inicio
+Prefs.dont_sent_ga_stats=No informar de estadísticas anónimas
+Prefs.dont_show_again=No volver a mostrar
+Prefs.close_tab_warning=Mostrar aviso cuando se desconecte cerrando la ventana
+Prefs.use_mode_z_compression=Usar compresión Modo Z
+Prefs.pasv_control_ip=Forzar la conexión de datos pasiva para usar la IP del canal de control
+Prefs.active_port_range=Rango de puertos activos:
+Prefs.active_port_range.error=El rango de puertos introducido es inválido.
+Prefs.active_port_range.warning=El rango de puertos debería incluir al menos 50 puertos.
+
+Registration.title=Registro de Secure FTP   
+Registration.license=Licencia:
+Registration.licensed_to=La licencia pertenece a:  
+Registration.non_commercial=Uso no comercial
+Registration.organization=Organización:
+Registration.serial_number=Número de Serie:
+
+Beta.expired=Esta versión Beta ha caducado. Por favor visite la web de Glub Techy y descargue la nueva versión.
+
+Ad.ftpswrap=Haga su servidor FTP seguro con Secure FTP Wrapper. Para mas información, visite:
+Ad.bean=Basado en un Bean de Secure FTP de Glub Tech.                   
+
+Applet.unspecified_license=La licencia no ha sido especificada.
+Applet.invalid_license=La licencia es inválida.
+Applet.incorrect_license=La licencia no es para el applet de Secure FTP.
+Applet.invalid_ip=Este applet sólo se puede ejecutar desde [^0].
+Applet.incorrect_version=La licencia no es para la versión [^0]
+
+Demo.label=Intento
+Demo.expired=Esta versión demo ha caducado. Por favor visite la tienda de Glub Tech para adquirir una licencia.

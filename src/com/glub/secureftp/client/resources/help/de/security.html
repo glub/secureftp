@@ -1,0 +1,37 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html; charset=UTF8"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff"> <a name="ssl"></a> <h2>Was ist SSL?</h2>
+SSL bzw <i>Secure Sockets Layer</i> ist ein von Netscape Communications entwickeltes, hybrides Verschl&uuml;sselungsprotokoll zur Daten&uuml;bertragung im Internet, dass verschl&uuml;sselte und gepr&uuml;fte Verbindungen erlaubt. SSL wird am h&auml;ufigsten f&uuml;r Verbindungen zwischen Browsern und Rechnern verwendet (eine URL, die mit <i>https</i> beginnt, zeigt diese Verwendung an). 
+
+<br><br>
+
+Secure FTP verwendet diese Technologie, um eine &Uuml;bertragung von Dateien &uuml;ber eine gesicherte Verbindung zu erlauben (vorausgesetzt, der Ziel-Rechner unterst&uuml;tzt SSL-Verbindungen).
+
+<a name="support"></a> <h2>Was wird unterst&uuml;tzt?</h2>
+
+Secure FTP bietet zwei SSL-Verbindungs-Optionen: stille und offene Sicherheit.
+
+<a name="implicit"></a> <h3>Stilles SSL</h3>
+
+Stille Sicherheit (auch passive Sicherheit genannt) erstellt eine SSL-Verbindung, sobald eine Verbindung erstellt wird. Bei stiller Sicherheit bestimmt der Ziel-Rechner f&uuml;r die sichere Verbindung der FTP-Applikation einen anderen Port (&uuml;blicherweise den Port 990). Beachten Sie: stilles SSL wurde urspr&uuml;nglich in verschiedenen Entw&uuml;rfen zu FTPS definiert, wird aber nicht mehr empfohlen.
+
+<a name="explicit"></a> <h3>Offenes SSL</h3>
+
+Offene Sicherheit (auch aktive Sicherheit genannt) erstellt eine einfache (unsichere) FTP-Verbindung w&auml;hrend derer ein spezieller Befehl, <i>AUTH SSL</i>, den Ziel-Rechner anweist, sich in den sicheren Modus zu begeben. Diese Spezifikation ist in RFC 2228 formal festgelegt.
+
+<a name="client"></a> <h3>SSL-Anwendungszertifikate</h3>
+
+Ein zus&auml;tzlicher Weg, einem Ziel-Rechner die Anwendung zu best&auml;tigen, ist die Verwendung von SSL-Anwendungszertifikaten. Diese Art der Best&auml;tigung erfolgt nicht beim Anmelden, sondern wenn die eigentlich sichere Verbindung erstellt wird.
+
+<br><br>
+Es gibt zwei Methoden, ein Anwendungszertifikat zu erstellen und zu senden:
+
+<ol> <li>Ein selbst-unterzeichnetes Zertifikat erstellen. Dieses Zertifikat kann durch beantworten einiger einfacher Fragen erstellt werden und ist drei Jahre g&uuml;ltig.<p> <li>Verwenden Sie ein Schl&uuml;ssel/Zertifikats-Paar, zur Verf&uuml;gung gestellt durch einen Administrator. Wenn Ihre Firma &uuml;ber eigene Zertifikats-Hoheit verf&uuml;gt, k&ouml;nnen Sie den privaten Schl&uuml;ssel und das  &ouml;ffentliche Zertifikat in die Anwendung importieren. Der private Schl&uuml;ssel muss sich entweder in einer PKCS#12-Schl&uuml;sseldatenbank befinden oder im PKCS#8-Format vorliegen. Das &ouml;ffentliche Zertifikat muss sich entweder in einer PKCS#12-Schl&uuml;sseldatenbank befinden oder im PEM- oder DER-Format vorliegen.<p> <li>Wenn das Schl&uuml;ssel/Zertifikats-Paar passwortgesch&uuml;tzt ist geben Sie das Passwort in das entsprechende Feld ein.</ol>
+
+Diese Optionen stehen unter <i>Hilfe &gt; Zertifikate verwalten</i> zur Verf&uuml;gung.
+
+<br>
+
+</body> </html>

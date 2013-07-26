@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'  ?>
+<!DOCTYPE index
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/index_1_0.dtd">
+<index version="1.0">
+  <indexitem text="add bookmarks" target="add_bookmarks"/>
+  <indexitem text="anonymous" target="connection_dialog"/>
+  <indexitem text="ascii mode" target="transfer_modes"/>
+  <indexitem text="binary mode" target="transfer_modes"/>
+  <indexitem text="bookmarks" target="bookmarks"/>
+  <indexitem text="ccc" target="connection_dialog"/>
+  <indexitem text="change directory" target="nav_interface"/>
+  <indexitem text="compression" target="compression"/>
+  <indexitem text="connect" target="connection_dialog"/>
+  <indexitem text="delete" target="delete_files"/>
+  <indexitem text="directory listing" target="dir_list"/>
+  <indexitem text="download" target="download"/>
+  <indexitem text="explicit SSL" target="security_support_explicit"/>
+  <indexitem text="FAQ" target="faq"/>
+  <indexitem text="firewall" target="support_nat"/>
+  <indexitem text="FTP" target="what_is_ftp"/>
+  <indexitem text="global bookmarks" target="global_bookmarks"/>
+  <indexitem text="hostname" target="connection_dialog"/>
+  <indexitem text="implicit SSL" target="security_support_implicit"/>
+  <indexitem text="manage bookmarks" target="manage_bookmarks"/>
+  <indexitem text="mode z" target="compression"/>
+  <indexitem text="NAT" target="support_nat"/>
+  <indexitem text="PASV" target="connection_dialog"/>
+  <indexitem text="passive" target="connection_dialog"/>
+  <indexitem text="password" target="connection_dialog"/>
+  <indexitem text="security" target="security_support"/>
+  <indexitem text="SSL" target="what_is_ssl"/>
+  <indexitem text="text mode" target="transfer_modes"/>
+  <indexitem text="transferring data" target="data_transfer"/>
+  <indexitem text="username" target="connection_dialog"/>
+  <indexitem text="upload" target="upload"/>
+</index>
+

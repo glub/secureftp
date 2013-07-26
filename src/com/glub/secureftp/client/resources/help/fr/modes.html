@@ -1,0 +1,35 @@
+<html>
+
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF8"><LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff">
+
+<h2>Modes de transfert</h2>
+
+Il existe trois modes de transfert de données: automatique, binaire et texte (ASCII).
+Les fichiers sont manipulés différemment selon qu'il sont des documents plein texte, ou des fichiers de tout
+autre type.
+
+<br><br>
+
+Quand le mode de transfert est défini à <i>text</i>, le serveur peut modifier
+les caractères de fin de ligne du fichier. En d'autres termes, les caractères de fin de ligne peuvent être remplacés
+par les caractères de fin de ligne de votre système. Ceci tient compte des fichiers texte correctement formatés.
+
+<br><br>
+
+Cependant, des problèmes peuvent se présenter si vous appliquez le mode texte à des fichiers binaires
+(comme des documents Word). Il est ici souhaitable que le serveur
+n'interprète aucun caractère dans le fichier et l'envoie tel quel.
+
+<br><br>
+
+Si vous ne souhaitez pas avoir à changer de mode, il est préférable de
+définir le mode de transfert à <i>auto</i> et laisser ainsi Secure FTP choisir le mode le plus approprié.
+
+<br>
+
+</body>
+
+</html>
+

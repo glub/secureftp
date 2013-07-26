@@ -1,0 +1,9 @@
+File pt_BR/bookmarks.html
+File pt_BR/faq.html
+File pt_BR/security.html
+File pt_BR/compression.html
+File pt_BR/transfer.html
+File pt_BR/connection.html
+File pt_BR/modes.html
+File pt_BR/what_is_ftp.html
+File pt_BR/navigation.html

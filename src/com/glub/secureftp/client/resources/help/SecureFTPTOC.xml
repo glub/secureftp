@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE toc
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/toc_1_0.dtd">
+
+<toc version="1.0">
+  <tocitem text="Secure FTP Help" image="toplevelfolder">
+    <tocitem text="What is FTP?" target="what_is_ftp"/>
+    <tocitem text="Security">
+      <tocitem text="What is SSL?" target="what_is_ssl"/>
+      <tocitem text="What is supported?" target="security_support"/>
+    </tocitem>
+    <tocitem text="How to Connect">
+      <tocitem text="Via the open connection dialog" target="connection_dialog"/>
+      <tocitem text="Via the bookmarks" target="connection_bookmarks"/>
+    </tocitem>
+    <tocitem text="Bookmarks">
+      <tocitem text="Adding bookmarks" target="add_bookmarks"/>
+      <tocitem text="Managing bookmarks" target="manage_bookmarks"/>
+      <tocitem text="Global bookmarks" target="global_bookmarks"/>
+    </tocitem>
+    <tocitem text="Navigation">
+      <tocitem text="Via the user interface" target="nav_interface"/>
+      <tocitem text="Via drag and drop" target="nav_dragndrop"/>
+    </tocitem>
+    <tocitem text="Transferring Data">
+      <tocitem text="Directory Listing" target="dir_list"/>
+      <tocitem text="Download" target="download"/>
+      <tocitem text="Upload" target="upload"/>
+      <tocitem text="Compression" target="compression"/>
+    </tocitem>
+    <tocitem text="Advanced Topics">
+      <tocitem text="Transfer modes" target="transfer_modes"/>
+      <tocitem text="Can I restore deleted files?" target="delete_files"/>
+      <tocitem text="Support for NAT" target="support_nat"/>
+    </tocitem>
+  </tocitem>
+</toc>
+
+

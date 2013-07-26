@@ -1,0 +1,358 @@
+﻿# (C) Copyright by Glub Tech, Inc. 1999-2006.
+# All Rights Reserved.
+
+Menu.file=ファイル
+Menu.mnemonic.file=F
+Menu.file.connect=接続...
+Menu.file.mnemonic.connect=C
+Menu.file.disconnect=切断
+Menu.file.mnemonic.disconnect=D
+Menu.file.exit=終了
+Menu.file.mnemonic.exit=x
+Menu.file.mnemonic.chdir=G
+Menu.file.prefs=環境設定...
+Menu.file.mnemonic.prefs=P
+
+Menu.local.mnemonic.select=A
+Menu.local.mnemonic.rename=e
+Menu.local.mnemonic.delete=t
+Menu.local.mnemonic.chdir=G
+
+Menu.remote=リモート
+Menu.mnemonic.remote=R
+Menu.remote.chdir=フォルダの移動...
+Menu.remote.new_folder=新規フォルダ...
+Menu.remote.rename=名前の変更...
+Menu.remote.raw=任意コマンドの送信...
+Menu.remote.mnemonic.download=D
+Menu.remote.mnemonic.upload=U
+Menu.remote.mnemonic.refresh=R
+Menu.remote.mnemonic.new_folder=N
+Menu.remote.mnemonic.chdir=G
+Menu.remote.mnemonic.rename=e
+Menu.remote.mnemonic.delete=t
+Menu.remote.mnemonic.raw=w
+Menu.remote.info=情報の取得
+Menu.remote.mnemonic.info=I
+
+Menu.transfer=転送モード
+Menu.mnemonic.transfer=T
+Menu.transfer.mnemonic.auto=A
+Menu.transfer.mnemonic.ascii=T
+Menu.transfer.mnemonic.binary=B
+
+Menu.bookmarks=ブックマーク
+Menu.mnemonic.bookmarks=B
+Menu.bookmarks.add=ブックマークを追加...
+Menu.bookmarks.mnemonic.add=A
+Menu.bookmarks.edit=ブックマークの管理...
+Menu.bookmarks.mnemonic.edit=M
+
+Menu.window=ウィンドウ
+Menu.mnemonic.window=W
+
+Menu.help=ヘルプ
+Menu.mnemonic.help=H
+Menu.help.help=ヘルプ...
+Menu.help.mnemonic.help=H
+Menu.help.about=Secure FTP について...
+Menu.help.mnemonic.about=A
+Menu.help.register=Secure FTP の登録...
+Menu.help.mnemonic.register=R
+Menu.help.update=更新の確認...
+Menu.help.mnemonic.update=u
+Menu.help.cert_manager=証明書の管理...
+Menu.help.mnemonic.cert_manager=C
+
+AboutBox.dialogTitle=Secure FTP について
+
+Toolbar.connect=接続
+Toolbar.tooltip.connect=FTP server に接続します
+Toolbar.disconnect=切断
+Toolbar.tooltip.disconnect=FTP server から切断します
+Toolbar.xferMode.tooltip.auto=自動転送モード
+Toolbar.xferMode.tooltip.ascii=テキスト転送モード
+Toolbar.xferMode.tooltip.binary=バイナリ転送モード
+
+Common.button.cancel=キャンセル
+Common.button.chdir=フォルダの移動
+Common.button.close=閉じる
+Common.button.connect=接続
+Common.button.delete=削除
+Common.button.download=ダウンロード
+Common.button.new_folder=新規フォルダ
+Common.button.change=変更
+Common.button.ok=OK
+Common.button.yes=はい
+Common.button.no=いいえ
+Common.button.refresh=更新
+Common.button.remove=移動
+Common.button.rename=名前の変更
+Common.button.save=保存
+Common.button.select_all=すべて選択
+Common.button.select_folder=フォルダを選択
+Common.button.select_file=ファイルを選択
+Common.button.upload=アップロード
+Common.button.true=オン
+Common.button.false=オフ
+Common.dialogTitle.error=Secure FTP エラー
+Common.dialogTitle.warning=Secure FTP 警告
+Common.dateFormat=M/d/yyyy
+Common.machineName=マイ コンピュータ
+Common.machineName.mac_os=コンピュータ
+Common.timeDateFormat=M/d/yyyy h:mm a
+Common.tooltip.chdir=新規フォルダへ移動する
+Common.tooltip.delete=ファイルやフォルダを削除する
+Common.tooltip.download=ファイルやフォルダをダウンロードする
+Common.tooltip.new_folder=新規フォルダを作成する
+Common.tooltip.refresh=ディレクトリ一覧の情報を更新する
+Common.tooltip.rename=ファイルやフォルダの名前を変更する
+Common.tooltip.stop=処理中の操作を中止する
+Common.tooltip.upload=ファイルやフォルダをアップロードする
+Common.connection_lost=切断されました。
+Common.xferMetric.bytes=バイト
+Common.xferMetric.kb=KB
+Common.xferMetric.mb=MB
+Common.xferMetric.gb=GB
+Common.xferMode.auto=自動
+Common.xferMode.ascii=テキスト
+Common.xferMode.binary=バイナリ
+Common.unknown.error=エラー: [^0]
+
+ConnectThread.makeInsecureConnection=SSL (Explicit) を使用してセキュア接続が確立されませんでした。\nセキュア接続を無効にして接続しますか？
+ConnectThread.unknownHost=[^0]: ホストがみつかりません
+ConnectThread.connectionFailed.dialogTitle=ホストに接続
+ConnectThread.connectionFailed1=接続できません: [^0]
+ConnectThread.connectionFailed2=[^0]: 接続できません
+ConnectThread.loginFailed=[^0]: ログインできません
+ConnectThread.loginFailed.dialogTitle=ホストに接続
+ConnectThread.cccNotSupported=CCC (Clear Command Channel) リクエストはサーバでサポートされていません。
+
+ConnectionDialog.connectPanelTab=接続
+ConnectionDialog.optionsPanelTab=オプション
+ConnectionDialog.savePasswordCheckBox=パスワードの保存
+ConnectionDialog.anonymousCheckBox=Anonymous
+ConnectionDialog.securityMode=セキュリティモード:
+ConnectionDialog.dataEncryption=Data データの暗号化:
+ConnectionDialog.ccc=CCC (Clear Command Channel):
+ConnectionDialog.securityMode.none=なし
+ConnectionDialog.securityMode.explicitSSL=SSL (Explicit)
+ConnectionDialog.securityMode.implicitSSL=SSL (Implicit)
+ConnectionDialog.dataEncryptionCheckBox=有効にする
+ConnectionDialog.cccCheckBox=有効にする （認証後）
+ConnectionDialog.cccToolTip=SSL (Explicit)を使用してセキュア接続を確立中に、ファイヤーウォール (NAT) を経由してデータ接続をサポートする場合は有効にする
+ConnectionDialog.port=ポート:
+ConnectionDialog.startingRemoteFolder=リモートの開始フォルダ:
+ConnectionDialog.startingLocalFolder=ローカルの開始フォルダ:
+ConnectionDialog.connectionType=接続の種類:
+ConnectionDialog.connectionTypeCheckBox=パッシブモード
+ConnectionDialog.tooltip.browse=参照
+ConnectionDialog.proxy=プロキシ:
+ConnectionDialog.proxyCheckBox=有効にする
+ConnectionDialog.closeTab.warning=サーバから切断されます。
+
+OpenConnectionDialog.dialogTitle=ホストに接続
+OpenConnectionDialog.profile=プロファイル:
+OpenConnectionDialog.hostname=ホスト名:
+OpenConnectionDialog.username=ユーザ名:
+OpenConnectionDialog.password=パスワード:
+OpenConnectionDialog.saveBookmarkCheckBox=ブックマークに保存
+OpenConnectionDialog.defaultComboBoxText=なし
+
+AddBookmarkDialog.dialogTitle=ブックマークの追加
+AddBookmarkDialog.saveBookmarkError=ブックマークの保存で問題が発生しました: [^0]
+
+EditBookmarkDialog.dialogTitle=ブックマークの編集
+
+EditBookmarksDialog.dialogTitle=ブックマークの管理
+EditBookmarksDialog.button.up=上へ
+EditBookmarksDialog.button.down=下へ
+EditBookmarksDialog.button.add=追加
+EditBookmarksDialog.button.edit=編集
+EditBookmarksDialog.button.delete=削除
+EditBookmarksDialog.button.close=閉じる
+EditBookmarksDialog.column.bookmark=ブックマーク
+EditBookmarksDialog.column.hostname=ホスト名
+EditBookmarksDialog.column.username=ユーザ名
+EditBookmarksDialog.failedToWriteBookmarks=ブックマークの書き込みに失敗しました。
+EditBookmarksDialog.hostName=ホスト: [^0]
+EditBookmarksDialog.userName=ユーザ: [^0]
+EditBookmarksDialog.securityMode=セキュリティモード: [^0]
+EditBookmarksDialog.dataEncryption=データの暗号化: [^0]
+EditBookmarksDialog.clearCommandChannel=CCC (Clear Command Channel): [^0]
+EditBookmarksDialog.localDir=ローカルの開始フォルダ: [^0]
+EditBookmarksDialog.remoteDir=リモートの開始フォルダ: [^0]
+EditBookmarksDialog.pasv=パッシブモードで接続: [^0]
+EditBookmarksDialog.proxy=プロキシの使用: [^0]
+EditBookmarksDialog.noDir=なし
+EditBookmarksDialog.read_only=[^0] （読み取り専用）
+
+MakingConnectionDialog.dialogTitle=接続しています...
+MakingConnectionDialog.connectingTo=接続先:
+
+AuthenticationDialog.dialogTitle=ユーザ認証
+
+DeleteDialog.confirmation.title=ファイルやフォルダの削除
+DeleteDialog.confirmation.one_file=\"[^0]\" を削除します
+DeleteDialog.confirmation.mult_files=複数のファイルを削除します。
+DeleteDialog.no_file=ファイルまたはディレクトが見つかりません。
+DeleteDialog.permission_denied=Permission denied: \"[^0]\" の削除に失敗しました。
+
+RenameDialog.label.name=ファイル名:
+
+InfoDialog.title=ファイル情報
+InfoDialog.filename=ファイル名:
+InfoDialog.date=日付:
+InfoDialog.size=サイズ:
+InfoDialog.perms=パーミッション:
+InfoDialog.user=ユーザ:
+InfoDialog.group=グループ:
+InfoDialog.others=その他:
+InfoDialog.access=アクセス許可:
+InfoDialog.rw=読み取りと書き込み
+InfoDialog.ro=読み取り専用
+InfoDialog.wo=書き込み専用 （ドロップボックス）
+InfoDialog.noAccess=アクセス許可なし
+
+MkDirDialog.label.name=ディレクトリ:
+MkDirDialog.permission_denied=アクセス権がありません。
+MkDirDialog.permission_denied_verbose=\"[^0]\" ディレクトリは作成されませんでした。アクセス権がありません。
+MkDirDialog.dir_exists=ディレクトリは既に存在します。
+
+CDCommand.chdir=移動先:
+CDCommand.noSuchDir=[^0]: ディレクトリは存在しません。
+CDCommand.permission_denied=[^0]: アクセス権がありません。
+
+RawCommand.title=任意コマンドの送信
+RawCommand.label=コマンド:
+
+FileListPanel.fileName=ファイル名
+FileListPanel.fileSize=サイズ
+FileListPanel.dateModified=更新日時
+FileListPanel.owner=オーナー
+FileListPanel.permissions=パーミッション
+FileListPanel.tooltip.upDir=上のディレクトリへ移動
+
+Log.clear=ログのクリア
+Log.save=ログの保存...
+
+LocalPanel.name=コンピュータ
+RemotePanel.tooltip.certInfo=証明書の情報
+
+RemoteView.numOfItem=[^0] 項目
+RemoteView.numOfItems=[^0] 項目
+
+DataTransferDialog.title=ファイルの転送
+DataTransferDialog.percentDone=[^0]% 完了
+DataTransferDialog.download=ダウンロード中:
+DataTransferDialog.upload=アップロード中:
+DataTransferDialog.timeLeftBase=残り時間:                                                                      
+DataTransferDialog.timeLeft=残り時間: [^3] [^4] 中、 [^0] ([^1] [^2] がコピーされました)
+DataTransferDialog.transferRateBase=転送レート:
+DataTransferDialog.transferRate=転送レート: [^0] [^1]/秒
+DataTransferDialog.bytesXferBase=転送されたデータ: [^0] [^1] がコピーされました
+
+DataTransfer.file_not_found=ファイルが見つかりませんでした。
+DataTransfer.transfer_failed=データ転送に失敗しました: [^0]
+DataTransfer.remote_file_smaller=リモートファイルは、ローカルファイルより小さいです。
+DataTransfer.remote_file_larger=リモートファイルは、ローカルファイルより大きいです。
+DataTransfer.remote_file_older=リモートファイルは、ローカルファイルより古いです。
+DataTransfer.remote_file_newer=リモートファイルは、ローカルファイルより新しいです。
+DataTransfer.remote_file_smaller_older=リモートファイルは、ローカルファイルより小さくて古いです。
+DataTransfer.remote_file_smaller_newer=リモートファイルは、ローカルファイルより小さくて新しいです。
+DataTransfer.remote_file_larger_older=リモートファイルは、ローカルファイルより大きくて古いです。
+DataTransfer.remote_file_larger_newer=リモートファイルは、ローカルファイルより大きくて新しいです。
+DataTransfer.file_exists.title=ファイルの有無
+DataTransfer.file_exists=\"[^0]\" ファイルは既に存在します。
+DataTransfer.options.title=オプション
+DataTransfer.button.replace=上書き
+DataTransfer.button.resume=再開
+DataTransfer.button.skip=スキップ
+DataTransfer.button.apply_to_all=すべてに適用
+
+EditCertificatesDialog.dialogTitle=証明書の管理
+EditCertificatesDialog.column.certificate=証明書
+EditCertificatesDialog.tab.cert=信頼された証明書
+EditCertificatesDialog.tab.client_cert=個人の証明書
+EditCertificatesDialog.cert.private=プライベートキー:
+EditCertificatesDialog.cert.public=パブリックｷｰ:
+EditCertificatesDialog.cert.ca=CA 証明書:
+EditCertificatesDialog.cert.pass=パスフレーズ:
+EditCertificatesDialog.client.border=証明書:
+EditCertificatesDialog.button.generate=証明書の生成...
+EditCertificatesDialog.expires_cert=有効期限: [^0]
+EditCertificatesDialog.filter.cert=証明書ファイル (*.pem, *.der, *.pfx, *.p12)
+EditCertificatesDialog.filter.key=プライベートキー (*.pk8, *.pfx, *.p12)
+
+GenerateCertificateDialog.dialogTitle=証明書の生成
+GenerateCertificateDialog.button.generate=生成
+GenerateCertificateDialog.cert.cn=氏名:
+GenerateCertificateDialog.cert.o=会社名:
+GenerateCertificateDialog.cert.ou=部署:
+GenerateCertificateDialog.cert.city=市町村:
+GenerateCertificateDialog.cert.state=都道府県:
+GenerateCertificateDialog.cert.country=国:
+GenerateCertificateDialog.cn.error=氏名を入力してください。
+GenerateCertificateDialog.o.error=会社名を入力してください。
+GenerateCertificateDialog.ou.error=部署を入力してください。
+GenerateCertificateDialog.city.error=市町村を入力してください。
+GenerateCertificateDialog.state.error=都道府県を入力してください。
+GenerateCertificateDialog.country.error=国を入力してください。
+
+SSLCertificate.button.deny=否認
+SSLCertificate.button.grant_always=常に許可
+SSLCertificate.button.grant_once=このセッションのみ許可
+SSLCertificate.certificate.title=証明書の情報
+SSLCertificate.new_certificate.title=新しい証明書の確認
+SSLCertificate.replace_certificate.title=異なる証明書の確認
+SSLCertificate.date_valid.label=この証明書は [^0] から [^1] まで有効です
+SSLCertificate.issued_to.label=証明書:
+SSLCertificate.issued_from.label=発行元:
+SSLCertificate.key_length.label=キーのサイズ: [^0] ビット
+SSLCertificate.key_strength.label=暗号化の強度: [^0] ビット
+SSLCertificate.fingerprint.label=指紋証明書:
+SSLCertificate.serial_number.label=シリアルナンバー:
+SSLCertificate.warning.title=証明書の警告
+SSLCertificate.no_cert=サーバは証明書を送信しませんでした。続行しますか？
+SSLCertificate.expired_cert=サーバの証明書は有効期限が切れています。続行しますか？
+SSLCertificate.invalid_cert=サーバの証明書はまだ有効ではありません。続行しますか？
+SSLCertificate.host_mismatch=証明書のホストと接続先のホストが一致しません。続行しますか？
+SSLCertificate.null_cert=証明書が存在しません。続行しますか？
+
+Update.title=ソフトウェアの更新
+Update.checkbox.auto=更新の自動確認
+Update.vurl=http://www.glub.com/cgi-bin/version_check.cgi?product=[^0]&version=[^1]&platform=[^2]&language=ja_JP
+Update.purl=http://www.glub.com/cgi-bin/transfer.cgi?transactionID=0&shortname=[^0]&os=[^1]&log_it=update_v[^2]&language=ja_JP
+Update.up_to_date=最新バージョンがインストールされています。
+Update.new_version=最新バージョンが入手可能です: v[^0].\n更新プログラムをダウンロードしますか？
+Update.button.select_folder=更新プログラムのダウンロード先フォルダを選択してください
+Update.success=更新プログラムは [^0] にダウンロードされました。インストールするには、このバージョンを終了してください。
+Update.failed_to_connect=サーバに接続できません。
+
+Prefs.title=環境設定
+Prefs.global_book_url=グローバルブックマークの URL:
+Prefs.proxy.title=SOCKS プロキシ:
+Prefs.proxy_host=ホスト名:
+Prefs.proxy_port=ポート:
+Prefs.proxy_user=ユーザ名:
+Prefs.proxy_pass=パスワード:
+Prefs.show_hidden_files=隠しファイルを表示する
+Prefs.show_full_column_listing=リモートのディレクトリ情報を展開して表示する
+Prefs.start_with_open=起動時に、「ホストに接続」ダイアログボックスを表示する
+Prefs.check_for_updates=起動時に、更新プログラムの有無を確認する
+Prefs.dont_show_again=再表示しない
+Prefs.close_tab_warning=タブで切断する時は、警告を表示する
+Prefs.use_mode_z_compression=Mode Z 圧縮を使用
+Prefs.pasv_control_ip=IP チャンネルの制御を使用する時は、パッシブモード使用のデータ接続を強制する
+
+Registration.title=Secure FTP 登録
+Registration.license=ライセンス:
+Registration.licensed_to=ライセンス所有者:
+Registration.non_commercial=非商用
+Registration.organization=組織:
+Registration.serial_number=シリアルナンバー:
+
+Beta.expired=このベータ版の有効期限は切れています。 Glub Tech ウェブサイトで、最新バージョンをダウンロードしてください。
+
+Ad.ftpswrap=Secure FTP ラッパーで、FTP サーバを安全確実にしてください。詳細は、ホームページをご覧ください:
+Ad.bean=このプログラムは、Glub Tech's Secure FTP Bean に基づいています。

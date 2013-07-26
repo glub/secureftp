@@ -1,0 +1,42 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html; charset=UTF8"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff">
+
+<h2>Perguntas Frequentes</h2>
+
+<h3>Posso recuperar ficheiros apagados?</h3>
+
+Numa palavra, não. Quando se estão a eliminar ficheiros do servidor 
+remoto, não há <i>caixote de lixo</i> ou <i>caixa de reciclagem,</i> 
+assim os ficheiros são apagados imediatamente. Localmente, o seu sistema 
+poderá suportar restauração de ficheiros, mas dado que o Secure FTP é 
+independente da plataforma, não temos hipótese de fornecer essa 
+funcionalidade.
+
+<h3>Suporte Para NAT</h3>
+
+NAT, ou <i>"Network Address Translation" (que significa Tradução de 
+Endereço de Rede),</i> está a tornar-se mais frequentemente usada. Se 
+estiver a utilizar uma barreira de protecção ("firewall") ou outro 
+dispositivo que lhe dá vários IPs a partir de um, a hipótese é estar a 
+usar NAT. A única coisa que tem de observar, quando estiver a usar NAT e 
+o Secure FTP, é quando <b>não</b> estiver a usar ligação do tipo <a 
+href="connection.html">passivo</a>. Se estiver por trás de NAT e está a 
+efectuar uma ligação segura, terá de fazer uma de duas coisas: ligação 
+passiva, ou, permitir a opção <a href="connection.html#ccc">Canal de 
+Comando Visível</a> juntamente com uma ligação de dados (PORTA) activa, 
+de outro modo as suas <a href="transfer.html">transferências de 
+dados</a> irão falhar. Isso ocorre porque durante uma ligação FTP não-segura 
+o seu dispositivo NAT realmente "escuta" os comandos FTP e faz o 
+endereçamento correcto. Mas, quando a ligação é segura, o dispositivo 
+NAT não consegue penetrar e fazer o seu trabalho correctamente. Quando 
+se fazem ligações passivas, o NAT  não terá de se preocupar com este 
+comportamento. 
+
+<br>
+
+</body>
+
+</html>

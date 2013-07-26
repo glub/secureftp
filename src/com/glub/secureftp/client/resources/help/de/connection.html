@@ -1,0 +1,46 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html; charset=UTF8"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff"> <h2>Verbindungsaufbau &uuml;ber den Dialog <i>Verbindung aufbauen</i></h2>
+
+<center>
+
+<img src="images/openConnection.png">
+
+</center>
+
+<p> <br>
+
+Sich mit einem Ziel-Rechner zu verbinden ist ein sehr einfacher Vorgang. Im einfachsten Falle ben&ouml;tigen Sie daf&uuml;r nur grundlegendste Angaben wie Rechnername, Benutzername und Passwort.
+
+<br><br>
+
+Der <i>Rechnername</i> ist der Name des Rechner, mit dem Sie sich verbinden wollen. Der <i>Benutzername</i> ist der Name mit dem Sie sich auf diesem Rechner anmelden. Das <i>Passwort</i> ist der Schl&uuml;ssel, der Ihren Benutzernamen best&auml;tigt. In einigen F&auml;llen k&ouml;nnen Sie sich <i>anonym</i> anmelden und haben dann weniger Rechte als ein ordentlicher Benutzer.
+
+<br><br>
+
+Standarm&auml;ssig versucht Secure FTP eine Verbindung mit <a href="security.html#ssl">offener Sicherheit</a> zu erstellen. Wenn diese Verbindung scheitert meldet dies Secure FTP und bietet eine ungesicherte Verbindung an. <font color="red">Achtung:</font> Verwenden Sie diese Option mit Vorsicht. Wenn Sie dies zulassen sind Ihr Passwort und Ihre Daten &ouml;ffentlich einsehbar.
+
+<br><br>
+
+Im Dialog <i>Verbindung &ouml;ffnen</i> k&ouml;nnen Sie ein <i>lokales</i> und ein <i>Ziel</i>-Ausgangsverzeichnisse ausw&auml;hlen, in die Secure FTP nach erfolgter Anmeldung wechselt.
+
+<br><br>
+
+Ebenso k&ouml;nnen Sie den <i>Verbindungstyp</i> w&auml;hlen. Vorgegeben ist eine <i>passive<i/> Verbindung, was f&uuml;r die meisten Benutzer ausreicht. Das bedeutet, dass der Ziel-Rechner bei einer Daten&uuml;bertragung entscheidet, wie Sie sich verbinden. Wenn Sie sich hinter einer <a
+href="faq.html#nat">NAT</a> befinden werden Sie diese Option bevorzugen, oder eine <a href="security.html#ssl">offene SSL</a>-Verbindund wird erstellt, bei der Sie die Option <a href="#ccc">offener Befehlskanal</a> w&auml;hlen und die Option <i>passive Verbindung</i> abw&auml;hlen, wenn dies der Ziel-Rechner unterst&uum;tzt.
+
+<br><br>
+
+<a name="ccc"></a>Die Option f&uuml; den <i>nicht-verschl&uuml;sselten Befehlskanal</i> ist nur bei einer <a href="security.html#ssl">offenen SSL</a>-Verbindung verf&uuml;gbar. Nachdem sich der Benutzer verschl&uuml;sselt identifiziert hat wird der Befehlskanal (oder Kontrollkanal) wieder in eine unverschl&uuml;sselte Verbindung verwandelt. Diese Option gibt Benutzern hinter einer (<a href="faq.html#nat">NAT</a>) Firewall die M&ouml;glichkeit, aktive (oder PORT-) Datenverbindungen zu verwenden.
+
+<br><br>
+
+Wenn Sie diese Optionen in Ihren Lesezeichen speichern k&ouml;nnen Sie sie &uuml;ber das Lesezeichen-Men&uuml; oder die Option Profile im Dialog <i>Verbindung aufbauen</i> erreichen. Weitere Informationen &uuml;ber Lesezeichen erhalten Sie <a href="bookmarks.html">hier</a>.
+
+<br>
+
+</body>
+
+</html>

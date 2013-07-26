@@ -1,0 +1,38 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html; charset=UTF8"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff">
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Can I restore deleted files?</h3>
+
+In short, no. When deleting files from the remote server, there is no
+<i>trashcan</i> or <i>recycle bin,</i> so files are deleted immediately.
+Locally, your system might support restoring files, but since Secure FTP
+is platform independent there is no way we can provide such
+functionality.
+
+<h3>Support for NAT</h3>
+
+NAT, or <i>Network Address Translation,</i> is becoming more frequently
+used. If you are using a firewall or other device that gives you many
+IPs from one, chances are you are using NAT. The only thing you need to
+watch when using NAT and Secure FTP is when you are <b>not</b> using a
+<a href="connection.html">passive</a> connection type. If you are behind
+NAT and are making a secure connection, you will need to make either: a
+passive connection, or enable the <a href="connection.html#ccc">Clear
+Command Channel</a> option along with an active (PORT) data connection,
+otherwise your <a href="transfer.html">data transfers</a> will fail.
+This is because during an insecure FTP connection your NAT device
+actually listens for FTP commands and does the correct address routing.
+But when the connection is secure, the NAT device cannot peek in and do
+the right thing. When making passive connections, NAT will not have to
+worry about this behavior.
+
+<br>
+
+</body>
+
+</html>

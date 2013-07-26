@@ -1,0 +1,37 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html; charset=UTF8"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff">
+
+<h2>Preguntas habituales</h2>
+
+<h3>¿Puedo recuperar los archivos eliminados?</h3>
+
+En términos generales, la respuesta es no. Cuando se eliminan archivos de
+un servidor remoto, no hay ningún tipo de <i>papelera de reciclaje,</i> así
+que los archivos se borran inmediatamente. Localmente, su sistema puede soportar
+la recuperación de archivos, pero como Secure FTP es una plataforma independiente
+no hay modo de que nosotros podamos ofrecer esa funcionalidad.
+
+<h3>Soporte para NAT</h3>
+
+NAT, o <i>Traducción de Dirección de Red,</i> se está extendiendo rápidamente.
+Si usa un cortafuegos u otro dispositivo que le dé varias direcciones IP a
+partir de una, entonces usted está usando NAT. Lo único que usted necesita
+revisar cuando utiliza NAT y Secure FTP es cuando <b>no</b> está usando un tipo 
+de conexión <a href="connection.html">pasiva</a>. Si estuviera utilizando NAT y
+haciendo una conexión segura, necesitará realizar una de las siguientes opciones:
+una conexión pasiva o habilitar la opción <a href="connection.html#ccc">Canal de 
+Comando Clear</a> con una conexión de datos (PUERTO) activa, sino sus 
+<a href="transfer.html">transferencias de datos</a> fallarán. Esto se debe
+a que durante una conexión FTP no segura, su dispositivo NAT escucha comandos 
+FTP y realiza el enrutamiento de direcciones correctas. Sin embargo, cuando la
+conexión es segura, el dispositivo NAT no puede realizar las comprobaciones y realizar la acción correcta.
+Al realizar conexiones pasivas, NAT no deberá preocuparse de este comportamiento.
+
+<br>
+
+</body>
+
+</html>

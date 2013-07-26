@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE map
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/map_1_0.dtd">
+
+<map version="1.0">
+        <mapID target="what_is_ftp" url="ja/what_is_ftp.html" />
+        <mapID target="what_is_ssl" url="ja/security.html#ssl" />
+        <mapID target="security_support" url="ja/security.html#support" />
+        <mapID target="security_support_explicit" url="ja/security.html#explicit" />
+        <mapID target="security_support_implicit" url="ja/security.html#implicit" />
+        <mapID target="compression" url="ja/compression.html" />
+        <mapID target="connection_dialog" url="ja/connection.html" />
+        <mapID target="connection_bookmarks" url="ja/bookmarks.html#connect" />
+        <mapID target="bookmarks" url="ja/bookmarks.html" />
+        <mapID target="add_bookmarks" url="ja/bookmarks.html#add" />
+        <mapID target="manage_bookmarks" url="ja/bookmarks.html#manage" />
+        <mapID target="global_bookmarks" url="ja/bookmarks.html#global" />
+        <mapID target="nav_interface" url="ja/navigation.html#gui" />
+        <mapID target="nav_dragndrop" url="ja/navigation.html#dnd" />
+        <mapID target="dir_list" url="ja/transfer.html#dir_list" />
+        <mapID target="download" url="ja/transfer.html#download" />
+        <mapID target="upload" url="ja/transfer.html#upload" />
+        <mapID target="data_transfer" url="ja/transfer.html" />
+        <mapID target="transfer_modes" url="ja/modes.html" />
+        <mapID target="delete_files" url="ja/faq.html#delete" />
+        <mapID target="support_nat" url="ja/faq.html#nat" />
+        <mapID target="faq" url="ja/faq.html" />
+</map>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE index
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/index_1_0.dtd">
+<index version="1.0">
+  <indexitem text="ブックマークの追加" target="add_bookmarks"/>
+  <indexitem text="anonymous" target="connection_dialog"/>
+  <indexitem text="ASCII モード" target="transfer_modes"/>
+  <indexitem text="バイナリモード" target="transfer_modes"/>
+  <indexitem text="ブックマーク" target="bookmarks"/>
+  <indexitem text="CCC" target="connection_dialog"/>
+  <indexitem text="ディレクトリの変更" target="nav_interface"/>
+  <indexitem text="圧縮" target="compression"/>
+  <indexitem text="接続" target="connection_dialog"/>
+  <indexitem text="削除" target="delete_files"/>
+  <indexitem text="ディレクトリ一覧" target="dir_list"/>
+  <indexitem text="ダウンロード" target="download"/>
+  <indexitem text="SSL (Explicit)" target="security_support_explicit"/>
+  <indexitem text="FAQ" target="faq"/>
+  <indexitem text="ファイヤーウオール" target="support_nat"/>
+  <indexitem text="FTP" target="what_is_ftp"/>
+  <indexitem text="グローバルブックマーク" target="global_bookmarks"/>
+  <indexitem text="ホスト名" target="connection_dialog"/>
+  <indexitem text="SSL (Implicit)" target="security_support_implicit"/>
+  <indexitem text="ブックマークの管理" target="manage_bookmarks"/>
+  <indexitem text="Mode Z" target="compression"/>
+  <indexitem text="NAT" target="support_nat"/>
+  <indexitem text="PASV" target="connection_dialog"/>
+  <indexitem text="パッシブ" target="connection_dialog"/>
+  <indexitem text="パスワード" target="connection_dialog"/>
+  <indexitem text="セキュリティ" target="security_support"/>
+  <indexitem text="SSL" target="what_is_ssl"/>
+  <indexitem text="テキストモード" target="transfer_modes"/>
+  <indexitem text="データ転送" target="data_transfer"/>
+  <indexitem text="ユーザ名" target="connection_dialog"/>
+  <indexitem text="アップロード" target="upload"/>
+</index>
+

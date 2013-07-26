@@ -1,0 +1,74 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html; charset=UTF8"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff">
+<h2>How To Connect Via The Open Connection Dialog</h2>
+
+<center>
+
+<img src="images/openConnection.png">
+
+</center>
+
+<p> <br>
+
+Connecting to a server is a pretty straightforward process. At the bare
+minimum, you will need to know some basic information, including the
+host name, user name and password.
+
+<br><br>
+
+The <i>host name</i> is the name of the machine you wish to connect. The
+<i>user name</i> is the name you would use to log in to that machine.
+The <i>password</i> is the key that allows your user name in. In some
+cases you may log in <i>anonymously,</i> in which case you may have less
+privileges than a standard user.
+
+<br><br>
+
+By default, we will attempt to make an <a
+href="security.html#ssl">explicit SSL</a> connection. If this connection
+fails, we will notify you and offer to make an insecure connection.
+<font color="red">Note:</font> You should choose this option carefully.
+If you allow for this, your password and data are open to the public.
+
+<br><br>
+
+In the Open Connection dialog you can also specify a starting
+<i>remote</i> folder and <i>local</i> folder, which the program will
+navigate to upon successful login.
+
+<br><br>
+
+You can also set the <i>connection type.</i> The default is a
+<i>passive</i> connection type, which for most users will be sufficient.
+What this means is when a data transfer is made, the server will decide
+where you will connect to. If you are behind a <a
+href="faq.html#nat">NAT</a> firewall, you will want this option selected
+or, if the server supports it and an <a
+href="security.html#ssl">explicit SSL</a> connection is made, select the
+<a href="#ccc">Clear Command Channel</a> option and the passive option
+deselected.
+
+<br><br>
+
+<a name="ccc"></a> The <i>Clear Command Channel</i> option is available
+only when an <a href="security.html#ssl">explicit SSL</a> connection is
+made. After the user has been securely authenticated, the command (or
+control) channel is reverted back to a clear connection. This option
+allows users behind a (<a href="faq.html#nat">NAT</a>) firewall the
+ability to get active (or PORT) data connections to work.
+
+<br><br>
+
+If you save these options to your bookmarks you can access them via the
+Bookmarks menu or the Profile option in the Open Connection dialog. You
+can get more information about bookmarks <a
+href="bookmarks.html">here</a>.
+
+<br>
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+#!/bin/tcsh
+
+native2ascii -encoding SJIS $1 index_ja.properties
+native2ascii -encoding UTF8 $1 index_<lang>.properties

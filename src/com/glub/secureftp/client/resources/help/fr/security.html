@@ -1,0 +1,65 @@
+<html>
+
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF8"><LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff"> <a name="ssl"></a> <h2>Qu'est ce que SSL?</h2>
+
+SSL, ou <i>Secure Sockets Layer,</i> est une technologie sécurisée élaborée par
+Netscape Communications afin de permettre le chiffrement et l'authentification
+des communications. C'est dans les communications entre les navigateurs et les serveurs Web
+que l'utilisation de SSL est la plus visible (quand les URLs qui commencent par <i>https</i>
+indiquent qu'une connexion SSL va être utilisée).
+
+<br><br>
+
+Secure FTP étend cette technologie pour permettre le transfert de
+fichiers sur une connexion sécurisée (sous réserve que le serveur FTP supporte
+les connexions SSL).
+
+<a name="support"></a> <h2>Qu'est ce qui est supporté?</h2>
+
+Secure FTP propose deux options de connexion SSL: connexions
+implicites et explicites.
+
+<a name="implicit"></a> <h3>SSL implicite</h3>
+
+La sécurité implicite (dite aussi sécurité passive), débute par une connexion SSL
+dès que la connexion est établie. Avec la sécurité implicite,
+le serveur définit un port différent (en général le port
+990), que le client FTP devra utiliser pour la connexion sécurisée. Note: SSL implicite fut
+initialement défini dans plusieurs ébauches du protocole FTPS mais n'est plus recommandé.
+
+<a name="explicit"></a> <h3>SSL explicite</h3>
+
+La sécurité explicite (dite aussi sécurité active), débute par une
+connexion FTP classique (non sécurisée) au cours de laquelle une commande spéciale envoyée au serveur, <i>AUTH SSL,</i>
+lui demande de passer en mode sécurisé. Les spécifications sont
+formellement définies dans la RFC 2228.
+
+<a name="client"></a> <h3>Certificats clients</h3>
+
+L'authentification client SSL peut aussi être utilisée pour authentifier le client auprès du serveur.
+Cette forme d'authentification n'est pas effectuée pendant
+la phase de login, mais au contraire quand la connexion sécurisée initiale est établie.
+
+<br><br>
+
+Secure FTP propose deux méthodes pour construire et envoyer un certificat client:
+
+<ol> <li>Générer un certificat auto-signé. Ce certificat, valide pendant 3 ans, peut être
+généré en répondant à quelques questions simples.
+<p> <li>Utiliser une paire clé/certificat fournie par un administrateur.
+Si votre entreprise possède sa propre Autorité de Certification (CA), vous pouvez importer
+la clé privée et le certificat public dans le client. La clé privée
+doit être soit au format enveloppe PKCS#12, soit isolée au format PKCS#8.
+Le certificat de l'Autorité de certification et le certificat public doivent être soit au format enveloppe PKCS#12, 
+soit isolés au format PEM ou DER.<p> <li>Si la paire clé/certificat est
+protégée par un mot de passe, inscrivez ce mot de passe
+dans le champ approprié. </ol>
+
+Vous trouverez ces options dans la rubrique de menu <i>Aide &gt; Gérer
+les certificats</i>.
+
+<br>
+
+</body> </html>

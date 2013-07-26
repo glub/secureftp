@@ -1,0 +1,9 @@
+File pt/bookmarks.html
+File pt/faq.html
+File pt/security.html
+File pt/compression.html
+File pt/transfer.html
+File pt/connection.html
+File pt/modes.html
+File pt/what_is_ftp.html
+File pt/navigation.html

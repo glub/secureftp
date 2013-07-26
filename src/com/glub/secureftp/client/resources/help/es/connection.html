@@ -1,0 +1,73 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html; charset=UTF8"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff"> <h2>Cómo conectar a través del Diálogo de Abrir Conexión</h2>
+
+<center>
+
+<img src="images/openConnection.png">
+
+</center>
+
+<p> <br>
+
+Conectar con un servidor es un proceso sencillo. Como mínimo, necesitará
+saber alguna información básica, incluyendo el nombre del host, el nombre
+de usuario y la contraseña.
+
+<br><br>
+
+El <i>nombre del host</i> es el nombre de la máquina a la que desea conectarse.
+El <i>nombre de usuario</i> es el nombre que usted usará para identificarse en esa
+máquina. La <i>contraseña</i> es la clave que le permite a su nombre de usuario
+identificarse. En algunos casos, usted podrá identificarse como <i>anónimo,</i>  
+pero tendrá menos privilegios que un usuario estandar. 
+
+<br><br>
+
+Por defecto, intentaremos realizar una conexión <a
+href="security.html#ssl">SSL explícita</a>. Si esta conexión fallase,
+se lo notificaremos y le ofreceremos realizar una conexión no segura.
+<font color="red">Atención:</font> Debería escoger esta opción cuidadosamente.
+Si lo permite, su contraseña y datos estarán abiertos al público.
+
+<br><br>
+
+En el diálogo de Abrir Conexión puede especificar un directorio <i>remoto</i>
+ y un directorio <i>local</i>, a los que el programa accederá directamente
+tras la correcta identificación de usuario.
+
+<br><br>
+
+Del mismo modo, usted puede elegir el <i>tipo de conexión.</i> El tipo por
+defecto es un tipo de conexión <i>pasiva</i>, que es suficiente para la 
+mayoría de los usuarios.
+Esto significa que cuando se hace una transferencia de datos, el servidor 
+decide dónde se conectará. Si usted tiene un cortafuegos <a
+href="faq.html#nat">NAT</a>, elegirá esta opción o, si el servidor lo soporta
+y realiza una conexión <a href="security.html#ssl">SSL explícita</a>, 
+seleccione la opción <a href="#ccc">Canal de Comando Clear</a> y deseleccione
+la opción pasiva.
+
+<br><br>
+
+<a name="ccc"></a> La opción <i>Canal de Comando Clear</i> está disponible
+sólo cuando se realiza una conexión <a href="security.html#ssl">SSL explícita</a>.
+Después de que el usuario haya sido autenticado en un modo seguro,
+el canal de comando (o control) se vuelve una conexión Clear. Esta opción
+permite a los usuarios con un cortafuegos (<a href="faq.html#nat">NAT</a>)
+activar conexiones de datos (o PUERTOS) para trabajar.
+
+<br><br>
+
+Si guarda estas opciones en sus favoritos podrá acceder a ellos a través
+del menú de Favoritos o a través de la opcion Perfil del Diálogo Abrir
+Conexión. Puede obtener más información acerca de favoritos <a
+href="bookmarks.html">aquí</a>. 
+
+<br>
+
+</body>
+
+</html>

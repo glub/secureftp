@@ -1,0 +1,66 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html;
+charset=SJIS"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css">
+</head>
+
+<body bgcolor="#ffffff"> <h2>「ホストに接続」ダイアログボックスから接続する方法</h2>
+
+<center>
+
+<img src="images/openConnection.png">
+
+</center>
+
+<p> <br>
+
+サーバへ接続する方法は、とても簡単です。ホスト名、ユーザ名、パスワード等の基本的な情報だけ必要になります。
+
+<br><br>
+
+<strong>ホスト名</strong>は、接続先のコンピュータの名前です。
+<strong>ユーザ名</strong>は、コンピュータへログインする際に使用する名前です。
+<strong>パスワード</strong>は、ご使用のユーザ名でログインする為のキーです。
+匿名のユーザ名、<strong>anonymous</strong>でログインすることもでき、これは、標準のユーザよりも権限が少なくなります。
+
+<br><br>
+
+初期設定では、<a href="security.html#ssl">SSL (Explicit)</a>
+を使用して接続するように設定されています。接続が確立されなければ、セキュア接続を無効にして接続するかどうか通知されます。<br> <font
+color="red">注意：</font>
+このオプションを使用するかどうかは、慎重に選択してください。セキュア接続を無効にすると、パスワードやデータが開放されることになります。
+
+<br><br>
+
+「ホストに接続」ダイアログボックスでは、接続が確立された際に表示する、<strong>リモート</strong>の開始フォルダと<strong>
+ローカル</strong>の開始フォルダが指定できます。
+
+<br><br>
+
+<strong>接続の種類</strong>の設定もできます。初期設定では、多くのユーザに使用されている<strong>パッシブ</strong
+>モードで接続するように設定されています。これは、データを転送する際、サーバによって接続先が決定されます。ファイヤーウォール (<a
+href="faq.html#nat">NAT</a>)
+を使用して接続する場合は、このオプションを選択してください。サーバでサポートされている必要がありますが、<a
+href="security.html#ssl">SSL (Explicit)</a> を使用して接続する場合は、<a
+href="#ccc">CCC (Clear Command Channel)</a>
+を選択し、パッシブモードを使用して接続するオプションをオフにしてください。
+
+<br><br>
+
+<a name="ccc"></a> <strong>CCC (Clear Command Channel)</strong> の使用は、<a
+href="security.html#ssl">SSL (Explicit)</a>
+を使用して接続する場合のみご利用頂けます。コマンド（コントロール）チャンネルは、ユーザ認証後、暗号化を無効にした接続に復帰します。
+このオプションは、ファイヤーウォール（<a
+href="faq.html#nat">NAT</a>）を経由して、アクティブ（PORT）データ接続を可能にします。
+
+<br><br>
+
+これらのオプションは、ブックマークに保存すると、「ブックマーク」メニューや「ホストに接続」
+ダイアログボックスにあるプロファイルオプションから利用できます。詳細は、<a
+href="bookmarks.html">ブックマーク</a>をご覧ください。
+
+<br>
+
+</body>
+
+</html>

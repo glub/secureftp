@@ -1,0 +1,72 @@
+<html>
+
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF8"><LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff"> <h2>Comment se connecter via la boîte de dialogue "Ouvrir une connexion"</h2>
+
+<center>
+
+<img src="images/openConnection.png">
+
+</center>
+
+<p> <br>
+
+Se connecter à un serveur est une opération très simple. Vous devez seulement
+connaître quelques informations de base, comme le
+nom d'hôte, le nom d'utilisateur et le mot de passe.
+
+<br><br>
+
+Le <i>Nom d'hôte</i> est le nom de la machine à laquelle vous voulez vous connecter. Le
+<i>Nom d'utilisateur</i> est le nom que vous utiliseriez pour vous identifier auprès de cette machine.
+Le <i>Mot de passe</i> est la clé qui, associée au Nom d'utilisateur, vous permet de vous authentifier. Dans certains
+cas, vous pourrez vous connecter en mode <i>Anonyme,</i> auquel cas vous aurez des privilèges moins étendus
+qu'un utilisateur standard.
+
+<br><br>
+
+Par défaut, SecureFTP tentera d'établir une connexion <a
+href="security.html#ssl">SSL explicite</a>. Si cette tentative
+échoue, vous en serez averti(e) et il vous sera proposé d'établir une connexion non sécurisée.
+<font color="red">Note:</font> Vous devez cependant accepter cette dernière option avec la plus grande prudence.
+En effet, dans ce cas, votre mot de passe et vos données seront transmis en clair sur le réseau.
+
+<br><br>
+
+Dans la boîte de dialogue "Ouvrir une connexion", vous pouvez aussi définir un répertoire de démarrage
+<i>distant</i> et un répertoire de démarrage <i>local</i>, dans lesquels le programme se positionnera
+en cas d'authentification réussie.
+
+<br><br>
+
+Vous pouvez aussi définir le <i>Type de connexion.</i> Par défaut le
+type de connexion est <i>passif</i>, ce qui devrait convenir à la plupart des utilisateurs.
+Le type de connexion passif implique que lorsqu'un transfert de données est effectué, le serveur décidera
+où vous allez vous connecter. Si vous êtes <a
+href="faq.html#nat">NATé(e)</a> derrière un pare-feu, vous devrez utiliser ce type de connexion passif,
+ou, si le serveur le supporte et si une connexion <a
+href="security.html#ssl">SSL explicite</a> est établie, sélectionnez l'option
+<a href="#ccc">Canal de commande en clair</a> et désélectionnez l'option Type de connexion passif.
+
+<br><br>
+
+<a name="ccc"></a> L'option <i>Canal de commande en clair</i> n'est disponible
+que lorsqu'une connexion <a href="security.html#ssl">SSL explicite</a> est
+établie. Quand l'utilisateur a été authentifié de manière sécurisée, le canal de commande (ou
+de contrôle) revient à une connexion en clair. Cette option 
+permet aux utilisateurs (<a href="faq.html#nat">NATés</a>) derrière un pare-feu de
+d'utiliser les connexions de type actif (ou PORT).
+
+<br><br>
+
+Si vous enregistrez ces options dans vos signets, vous pourrez les retrouver via le
+menu "Signets" ou l'option Profil de la boîte de dialogue "Ouvrir une connexion". Pour plus
+d'information à propos des signets : <a
+href="bookmarks.html">ici</a>.
+
+<br>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE toc
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/toc_1_0.dtd">
+
+<toc version="1.0">
+  <tocitem text="Secure FTP ヘルプ" image="toplevelfolder">
+    <tocitem text="FTP とは？" target="what_is_ftp"/>
+    <tocitem text="セキュリティ">
+      <tocitem text="SSL とは？" target="what_is_ssl"/>
+      <tocitem text="サポート情報" target="security_support"/>
+    </tocitem>
+    <tocitem text="接続方法">
+      <tocitem text="「ホストに接続」ダイアログボックスから接続する方法" target="connection_dialog"/>
+      <tocitem text="ブックマークから接続" target="connection_bookmarks"/>
+    </tocitem>
+    <tocitem text="ブックマーク">
+      <tocitem text="ブックマークの追加" target="add_bookmarks"/>
+      <tocitem text="ブックマークの管理" target="manage_bookmarks"/>
+      <tocitem text="グローバルブックマーク" target="global_bookmarks"/>
+    </tocitem>
+    <tocitem text="ナビゲーション">
+      <tocitem text="ユーザインターフェースの使用" target="nav_interface"/>
+      <tocitem text="ドラッグ＆ドロップの使用" target="nav_dragndrop"/>
+    </tocitem>
+    <tocitem text="データ転送">
+      <tocitem text="ディレクトリ一覧表示" target="dir_list"/>
+      <tocitem text="ダウンロード" target="download"/>
+      <tocitem text="アップロード" target="upload"/>
+      <tocitem text="圧縮" target="compression"/>
+    </tocitem>
+    <tocitem text="上級者向けトピック">
+      <tocitem text="転送モード" target="transfer_modes"/>
+      <tocitem text="削除したファイルを復元できますか？" target="delete_files"/>
+      <tocitem text="NAT のサポート" target="support_nat"/>
+    </tocitem>
+  </tocitem>
+</toc>
+
+

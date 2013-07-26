@@ -1,0 +1,3 @@
+Main-Class: com.glub.secureftp.client.gui.SecureFTP
+Class-Path: lib/jakarta-regexp-1.5.jar lib/gtftps.jar lib/jaxen-full.jar lib/jdom.jar lib/saxpath.jar lib/jh.jar images.jar resources.jar
+Created-By: Glub Tech, Inc.

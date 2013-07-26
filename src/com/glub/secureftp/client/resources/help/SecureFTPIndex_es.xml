@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'  ?>
+<!DOCTYPE index
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/index_1_0.dtd">
+<index version="1.0">
+  <indexitem text="añadir a favoritos" target="add_bookmarks"/>
+  <indexitem text="anónimo" target="connection_dialog"/>
+  <indexitem text="modo ascii" target="transfer_modes"/>
+  <indexitem text="modo binario" target="transfer_modes"/>
+  <indexitem text="favoritos" target="bookmarks"/>
+  <indexitem text="ccc" target="connection_dialog"/>              
+  <indexitem text="cambiar directorio" target="nav_interface"/>
+  <indexitem text="compresión" target="compression"/>
+  <indexitem text="conectar" target="connection_dialog"/>
+  <indexitem text="eliminar" target="delete_files"/>
+  <indexitem text="listado de directorio" target="dir_list"/>
+  <indexitem text="descargar" target="download"/>
+  <indexitem text="SSL explícito" target="security_support_explicit"/>
+  <indexitem text="FAQ" target="faq"/>
+  <indexitem text="cortafuegos" target="support_nat"/>               
+  <indexitem text="FTP" target="what_is_ftp"/>
+  <indexitem text="favoritos globales" target="global_bookmarks"/>
+  <indexitem text="nombre del host" target="connection_dialog"/>
+  <indexitem text="SSL implícito" target="security_support_implicit"/>
+  <indexitem text="gestión de favoritos" target="manage_bookmarks"/>
+  <indexitem text="modo z" target="compression"/>
+  <indexitem text="NAT" target="support_nat"/>
+  <indexitem text="PASV" target="connection_dialog"/>
+  <indexitem text="pasivo" target="connection_dialog"/>
+  <indexitem text="contraseña" target="connection_dialog"/>
+  <indexitem text="seguridad" target="security_support"/>
+  <indexitem text="SSL" target="what_is_ssl"/>
+  <indexitem text="modo texto" target="transfer_modes"/>
+  <indexitem text="transfiriendo datos" target="data_transfer"/>
+  <indexitem text="nombre de usuario" target="connection_dialog"/>
+  <indexitem text="cargar" target="upload"/>                     
+</index>
+

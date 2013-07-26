@@ -1,0 +1,34 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html;
+charset=SJIS"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css">
+</head>
+
+<body bgcolor="#ffffff">
+
+<h2>よくある質問</h2>
+
+<h3>削除したファイルを復元できますか？</h3>
+
+手短に言えば、できません。リモートサーバには、ごみ箱はありませんので、ファイルを削除すると、ただちに消去されます。ローカルでは、
+ファイルの復元がサポートされているシステムも存在しますが、Secure FTP
+は、独立したプラットフォームですので、ファイルの復元機能は、ご用意できません。
+
+<h3>NAT のサポート</h3>
+
+<strong>Network Address Translation (NAT)</strong>
+は、頻繁に使用されるようになってきました。ファイヤーウォールや、たくさんの IP が使用できるデバイスを利用されている場合、NAT
+をご利用の方が多いでしょう。NAT と Secure FTP をご利用の方で、<a
+href="connection.html">パッシブ</a>モードでの接続を使用されて<b>いない</b>方は、注意が必要です。NAT
+を使用し、暗号化を有効にして接続している場合は、パッシブモードを使用して接続するか、アクティブ (PORT) データ転送と共に <a
+href="connection.html#ccc">CCC (Clear Command Channel)</a>
+を有効にしてください。有効にしない場合は、<a
+href="transfer.html">データ転送</a>に失敗する恐れがあります。これは、暗号化を無効にして FTP に接続する際、NAT
+デバイスが FTP コマンドを実行し、アドレスルーティングを訂正しないからです。暗号化を有効にして接続している場合、NAT
+デバイスは正しい処理を行います。パッシブモードを使用して接続している場合、NAT は、この動作を確認する必要がなくなります。
+
+<br>
+
+</body>
+
+</html>

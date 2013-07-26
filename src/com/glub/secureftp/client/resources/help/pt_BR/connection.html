@@ -1,0 +1,79 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html; charset=UTF8"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css"> </head>
+
+<body bgcolor="#ffffff"> <h2>Como conectar-se Via Diálogo de Abertura de Conexão</h2>
+
+<center>
+
+<img src="images/openConnection.png">
+
+</center>
+
+<p> <br>
+
+Conectar-se a um servidor é um processo bastante simples. No mínimo, 
+precisará conhecer algumas informações básicas, incluindo o nome do 
+servidor (sistema hospedeiro ou "host"), o nome de usuário e a 
+senha.
+
+<br><br>
+
+O <i>nome do servidor</i> é o nome da máquina a que pretende conectar-se. O 
+<i>nome de usuário</i> é o nome que vai utilizar para efetuar a 
+entrada no sistema ("login") dessa máquina. A <i>senha</i> é a 
+chave que permite que o seu nome de usuário entre no sistema. Nalguns 
+casos poderá entrar no sistema <i>anonimamente,</i> caso em que poderá 
+ter menos privilégios que um usuário normal.
+
+<br><br>
+
+Por defeito, nós tentaremos fazer uma conexão <a 
+href="security.html#ssl">SSL explícita</a>. Se esta conexão falhar, será 
+notificado e ser-lhe-á oferecido efetuar uma conexão insegura. <font 
+color="red">Nota:</font> Deverá escolher esta opção com cuidado. Se 
+permitir esta conexão, a sua senha e os seus dados ficam 
+publicamente expostos.
+
+<br><br>
+
+No diálogo de Abertura de Conexão poderá também especificar uma pasta 
+<i>remota</i> e uma pasta <i>local</i> de início, para as quais o 
+programa irá, uma vez obtida entrada com sucesso no sistema remoto.
+
+
+<br><br>
+
+Poderá também definir o <i>tipo de conexão.</i> Por defeito é adotado o 
+tipo de conexão <i>passivo</i>, que para a maioria dos usuários será 
+suficiente. O que isto significa é que quando é feita uma transferência 
+de dados, o servidor decidirá onde o usuário se irá conectar. Se estiver 
+atrás de uma barreira de proteção ("firewall") <a 
+href="faq.html#nat">NAT</a>, vai querer ter esta opção selecionada ou, 
+se o sistema suportar, será estabelecida uma conexão <a 
+href="security.html#ssl">SSL explícita</a>, selecione a opção <a 
+href="#ccc">Canal de Comando Visível</a> e a opção passivo não 
+selecionada.
+
+<br><br>
+
+<a name="ccc"></a> A opção <i>Canal de Comando Visível</i> está 
+disponível apenas quando se faz uma conexão <a 
+href="security.html#ssl">SSL explícita</a>. Depois de o usuário ser 
+autenticado seguramente, o canal de comando (ou controle) é revertido 
+para anular a conexão. Esta opção permite aos usuários atrás de uma 
+barreira de proteção ("firewall") (<a href="faq.html#nat">NAT</a>) 
+conseguirem que conexões de dados ativas (Porta), funcionem.
+
+<br><br>
+
+Se salvar estas opções nos seus marcadores poderá aceder-lhes através do 
+menu Marcadores ou da opção Perfil no diálogo de Abertura de Conexão. 
+Poderá obter mais informações acerca de Marcadores <a
+href="bookmarks.html">aqui</a>.
+
+<br>
+
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+﻿# (C) Copyright by Glub Tech, Inc. 1999-2006.
+# All Rights Reserved.
+
+Menu.file=Файл
+Menu.mnemonic.file=Ф
+Menu.file.connect=Соединиться...
+Menu.file.mnemonic.connect=С
+Menu.file.disconnect=Отсоединиться
+Menu.file.mnemonic.disconnect=О
+Menu.file.exit=Выход
+Menu.file.mnemonic.exit=х
+Menu.file.mnemonic.chdir=П
+Menu.file.prefs=Настройки...
+Menu.file.mnemonic.prefs=Н
+
+Menu.local.mnemonic.select=В
+Menu.local.mnemonic.rename=и
+Menu.local.mnemonic.delete=У
+Menu.local.mnemonic.chdir=П
+
+Menu.remote=Сервер
+Menu.mnemonic.remote=е
+Menu.remote.chdir=Перейти в папку...
+Menu.remote.new_folder=Создать папку...
+Menu.remote.rename=Переименовать...
+Menu.remote.raw=Передать команду...
+Menu.remote.mnemonic.download=З
+Menu.remote.mnemonic.upload=В
+Menu.remote.mnemonic.refresh=О
+Menu.remote.mnemonic.new_folder=о
+Menu.remote.mnemonic.chdir=П
+Menu.remote.mnemonic.rename=и
+Menu.remote.mnemonic.delete=У
+Menu.remote.mnemonic.raw=К
+Menu.remote.info=Получить сведения
+Menu.remote.mnemonic.info=в
+
+Menu.transfer=Режим передачи
+Menu.mnemonic.transfer=Р
+Menu.transfer.mnemonic.auto=А
+Menu.transfer.mnemonic.ascii=Т
+Menu.transfer.mnemonic.binary=Д
+
+Menu.bookmarks=Закладки
+Menu.mnemonic.bookmarks=З
+Menu.bookmarks.add=Добавить закладку...
+Menu.bookmarks.mnemonic.add=Д
+Menu.bookmarks.edit=Управление закладками...
+Menu.bookmarks.mnemonic.edit=У
+
+Menu.window=Окно
+Menu.mnemonic.window=О
+
+Menu.help=Справка
+Menu.mnemonic.help=С
+Menu.help.help=Справка...
+Menu.help.mnemonic.help=С
+Menu.help.about=О Secure FTP...
+Menu.help.mnemonic.about=О
+Menu.help.register=Зарегистрировать Secure FTP...
+Menu.help.mnemonic.register=р
+Menu.help.update=Проверить обновления...
+Menu.help.mnemonic.update=н
+Menu.help.cert_manager=Управление сертификатами...
+Menu.help.mnemonic.cert_manager=е
+
+AboutBox.dialogTitle=О Secure FTP
+
+Toolbar.connect=Соединиться
+Toolbar.tooltip.connect=Соединение с FTP-сервером
+Toolbar.disconnect=Отсоединиться
+Toolbar.tooltip.disconnect=Отсоединение от FTP-сервера
+Toolbar.xferMode.tooltip.auto=Автоматический режим передачи
+Toolbar.xferMode.tooltip.ascii=Текстовый режим передачи
+Toolbar.xferMode.tooltip.binary=Двоичный режим передачи
+
+Common.button.cancel=Отмена
+Common.button.chdir=Перейти к папке
+Common.button.close=Закрыть
+Common.button.connect=Соединиться
+Common.button.delete=Удалить
+Common.button.download=Загрузить
+Common.button.new_folder=Создать папку
+Common.button.change=Изменить
+Common.button.ok=OK
+Common.button.yes=Да
+Common.button.no=Нет
+Common.button.refresh=Обновить
+Common.button.remove=Удалить
+Common.button.rename=Переименовать
+Common.button.save=Сохранить
+Common.button.select_all=Выделить все
+Common.button.select_folder=Выделить папку
+Common.button.select_file=Выделить файл
+Common.button.upload=Выгрузить
+Common.button.true=истина
+Common.button.false=ложь
+Common.dialogTitle.error=Ошибка Secure FTP
+Common.dialogTitle.warning=Предупреждение Secure FTP
+Common.dateFormat=d/M/yyyy
+Common.machineName=Мой компьютер
+Common.machineName.mac_os=Компьютер
+Common.timeDateFormat=d/M/yyyy HH:mm
+Common.tooltip.chdir=Переход к новой папке
+Common.tooltip.delete=Удаление файла или папки
+Common.tooltip.download=Загрузка файла или папки
+Common.tooltip.new_folder=Создание папки
+Common.tooltip.refresh=Обновление перечня файлов в каталоге
+Common.tooltip.rename=Переименование файла или папки
+Common.tooltip.stop=Отмена операции
+Common.tooltip.upload=Выгрузка файла или папки
+Common.connection_lost=Соединение потеряно.
+Common.xferMetric.bytes=байт
+Common.xferMetric.kb=КБ
+Common.xferMetric.mb=МБ
+Common.xferMetric.gb=ГБ
+Common.xferMode.auto=Авто
+Common.xferMode.ascii=Текстовый
+Common.xferMode.binary=Двоичный
+Common.unknown.error=Произошла ошибка: [^0]
+
+ConnectThread.makeInsecureConnection=Не удалось установить защищенное соединение (явное SSL-соединение).\nПродолжить работу с незащищенным соединением?
+ConnectThread.unknownHost=[^0]: неизвестный узел
+ConnectThread.connectionFailed.dialogTitle=Неудача при попытке соединения
+ConnectThread.connectionFailed1=Не удалось установить соединение: [^0]
+ConnectThread.connectionFailed2=[^0]: не удалось установить соединение
+ConnectThread.loginFailed=[^0]: не удалось войти на сервер
+ConnectThread.loginFailed.dialogTitle=Неудача при попытке входа на сервер
+ConnectThread.cccNotSupported=Запрос «Открытый командный канал» не поддерживается сервером.
+
+ConnectionDialog.connectPanelTab=Соединение
+ConnectionDialog.optionsPanelTab=Параметры
+ConnectionDialog.savePasswordCheckBox=Сохранить пароль
+ConnectionDialog.anonymousCheckBox=Анонимно
+ConnectionDialog.securityMode=Режим защиты:
+ConnectionDialog.dataEncryption=Шифрование данных:
+ConnectionDialog.ccc=Открытый командный канал:
+ConnectionDialog.securityMode.none=Нет
+ConnectionDialog.securityMode.explicitSSL=Явное SSL-соединение
+ConnectionDialog.securityMode.implicitSSL=Неявное SSL-соединение
+ConnectionDialog.dataEncryptionCheckBox=Включено
+ConnectionDialog.cccCheckBox=Включено (после проверки подлинности)
+ConnectionDialog.cccToolTip=<html>Этот режим следует включить при явном SSL-соединении, чтобы стало возможным<br>соединение для передачи данных при нахождении под защитой брандмауэра (NAT).</html>
+ConnectionDialog.port=Порт:
+ConnectionDialog.startingRemoteFolder=Исходная удаленная папка:
+ConnectionDialog.startingLocalFolder=Исходная локальная папка:
+ConnectionDialog.connectionType=Тип соединения:
+ConnectionDialog.connectionTypeCheckBox=Пассивное
+ConnectionDialog.tooltip.browse=Обзор
+ConnectionDialog.proxy=Прокси-сервер:
+ConnectionDialog.proxyCheckBox=Включен
+ConnectionDialog.closeTab.warning=Сейчас произойдет отсоединение от сервера.
+
+OpenConnectionDialog.dialogTitle=Установление соединения
+OpenConnectionDialog.profile=Профиль:
+OpenConnectionDialog.hostname=Имя узла:
+OpenConnectionDialog.username=Имя пользователя:
+OpenConnectionDialog.password=Пароль:
+OpenConnectionDialog.saveBookmarkCheckBox=Добавить закладку
+OpenConnectionDialog.defaultComboBoxText=Нет
+
+AddBookmarkDialog.dialogTitle=Добавить закладку
+AddBookmarkDialog.saveBookmarkError=Произошла ошибка при сохранении закладок: [^0]
+
+EditBookmarkDialog.dialogTitle=Редактирование закладки
+
+EditBookmarksDialog.dialogTitle=Управление закладками
+EditBookmarksDialog.button.up=Вверх
+EditBookmarksDialog.button.down=Вниз
+EditBookmarksDialog.button.add=Добавить
+EditBookmarksDialog.button.edit=Изменить
+EditBookmarksDialog.button.delete=Удалить
+EditBookmarksDialog.button.close=Закрыть
+EditBookmarksDialog.column.bookmark=Закладка
+EditBookmarksDialog.column.hostname=Имя узла
+EditBookmarksDialog.column.username=Пользовательское имя
+EditBookmarksDialog.failedToWriteBookmarks=Не удалось записать закладки.
+EditBookmarksDialog.hostName=Имя узла: [^0]
+EditBookmarksDialog.userName=Пользовательское имя: [^0]
+EditBookmarksDialog.securityMode=Режим защиты: [^0]
+EditBookmarksDialog.dataEncryption=Шифрование данных: [^0]
+EditBookmarksDialog.clearCommandChannel=Открытый командный канал: [^0]
+EditBookmarksDialog.localDir=Исходная локальная папка: [^0]
+EditBookmarksDialog.remoteDir=Исходная удаленная папка: [^0]
+EditBookmarksDialog.pasv=Пассивное соединение: [^0]
+EditBookmarksDialog.proxy=Использовать прокси-сервер: [^0]
+EditBookmarksDialog.noDir=нет
+EditBookmarksDialog.read_only=[^0] (только для чтения)
+
+MakingConnectionDialog.dialogTitle=Устанавливается соединение...
+MakingConnectionDialog.connectingTo=Устанавливается соединение с узлом:
+
+AuthenticationDialog.dialogTitle=Проверка подлинности пользователя
+
+DeleteDialog.confirmation.title=Подтверждение удаления
+DeleteDialog.confirmation.one_file=Сейчас будет безвозвратно удален файл «[^0]».
+DeleteDialog.confirmation.mult_files=Сейчас будут безвозвратно удалены несколько файлов.
+DeleteDialog.no_file=Нет такого файла или каталога.
+DeleteDialog.permission_denied=Отказ в доступе: не удалось удалить «[^0]».
+
+RenameDialog.label.name=Имя:
+
+InfoDialog.title=Сведения о файле
+InfoDialog.filename=Имя:
+InfoDialog.date=Дата:
+InfoDialog.size=Размер:
+InfoDialog.perms=Владелец и права доступа:
+InfoDialog.user=Пользователь:
+InfoDialog.group=Группа:
+InfoDialog.others=Другие:
+InfoDialog.access=доступ:
+InfoDialog.rw=Чтение и запись
+InfoDialog.ro=Только чтение
+InfoDialog.wo=Только запись
+InfoDialog.noAccess=Нет доступа
+
+MkDirDialog.label.name=Каталог:
+MkDirDialog.permission_denied=В доступе отказано.
+MkDirDialog.permission_denied_verbose=Не удалось удалить каталог «[^0]». В доступе отказано.
+MkDirDialog.dir_exists=Каталог существует.
+
+CDCommand.chdir=Перейти в папку:
+CDCommand.noSuchDir=[^0]: нет такой папки.
+CDCommand.permission_denied=[^0]: в доступе отказано.
+
+RawCommand.title=Передать команду
+RawCommand.label=Команда:
+
+FileListPanel.fileName=Имя
+FileListPanel.fileSize=Размер
+FileListPanel.dateModified=Дата изменения
+FileListPanel.owner=Владелец
+FileListPanel.permissions=Права доступа
+FileListPanel.tooltip.upDir=На уровень выше
+
+RemoteView.numOfItem=[^0] элемент
+RemoteView.numOfItems=[^0] элементов
+
+Log.clear=Очистить журнал
+Log.save=Сохранить журнал...
+
+LocalPanel.name=Ваш компьютер
+RemotePanel.tooltip.certInfo=Сведения о сертификате
+
+DataTransferDialog.title=Передача файлов
+DataTransferDialog.percentDone=[^0]% выполнено
+DataTransferDialog.download=Загрузка:
+DataTransferDialog.upload=Выгрузка:
+DataTransferDialog.timeLeftBase=Оценка оставшегося времени:                                                                      
+DataTransferDialog.timeLeft=Оценка оставшегося времени: [^0] ([^1] [^2] из [^3] [^4])
+#DataTransferDialog.timeLeft=Оценка оставшегося времени: [^0] ([^1] [^2] из [^3] [^4] скопировано)
+DataTransferDialog.transferRateBase=Скорость передачи:
+DataTransferDialog.transferRate=Скорость передачи: [^0] [^1]/с
+DataTransferDialog.bytesXferBase=Данные переданы: [^0] [^1] скопировано
+
+DataTransfer.file_not_found=Файл не найден.
+DataTransfer.transfer_failed=Ошибка при передаче данных: [^0]
+DataTransfer.remote_file_smaller=Удаленный файл имеет меньший размер, чем локальный.
+DataTransfer.remote_file_larger=Удаленный файл имеет больший размер, чем локальный.
+DataTransfer.remote_file_older=Удаленный файл имеет более раннюю дату, чем локальный.
+DataTransfer.remote_file_newer=Удаленный файл имеет более позднюю дату, чем локальный.
+DataTransfer.remote_file_smaller_older=Удаленный файл имеет меньший размер и более раннюю дату, чем локальный.
+DataTransfer.remote_file_smaller_newer=Удаленный файл имеет меньший размер и более позднюю дату, чем локальный.
+DataTransfer.remote_file_larger_older=Удаленный файл имеет больший размер и более раннюю дату, чем локальный.
+DataTransfer.remote_file_larger_newer=Удаленный файл имеет больший размер и более позднюю дату, чем локальный.
+DataTransfer.file_exists.title=Файл существует
+DataTransfer.file_exists=Файл «[^0]» уже существует.
+DataTransfer.options.title=Параметры
+DataTransfer.button.replace=Заменить
+DataTransfer.button.resume=Возобновить
+DataTransfer.button.skip=Пропустить
+DataTransfer.button.apply_to_all=Для всех
+
+EditCertificatesDialog.dialogTitle=Управление сертификатами
+EditCertificatesDialog.column.certificate=Сертификат
+EditCertificatesDialog.tab.cert=Доверенные сертификаты
+EditCertificatesDialog.tab.client_cert=Персональный сертификат
+EditCertificatesDialog.cert.private=Закрытый ключ:
+EditCertificatesDialog.cert.public=Открытый ключ:
+EditCertificatesDialog.cert.ca=Сертификат, выданный органом сертификации:
+EditCertificatesDialog.cert.pass=Идентификационная фраза:
+EditCertificatesDialog.client.border=Ваш сертификат:
+EditCertificatesDialog.button.generate=Генерировать сертификат...
+EditCertificatesDialog.expires_cert=Срок действия: [^0]
+EditCertificatesDialog.filter.cert=Файлы сертификатов (*.pem, *.der, *.pfx, *.p12)
+EditCertificatesDialog.filter.key=Закрытые ключи (*.pk8, *.pfx, *.p12)
+
+GenerateCertificateDialog.dialogTitle=Генерация сертификата
+GenerateCertificateDialog.button.generate=Генерировать
+GenerateCertificateDialog.cert.cn=Ваше имя:
+GenerateCertificateDialog.cert.o=Наименование компании:
+GenerateCertificateDialog.cert.ou=Подразделение компании:
+GenerateCertificateDialog.cert.city=Город:
+GenerateCertificateDialog.cert.state=Штат:
+GenerateCertificateDialog.cert.country=Страна:
+GenerateCertificateDialog.cn.error=Введите свое имя.
+GenerateCertificateDialog.o.error=Введите наименование компании.
+GenerateCertificateDialog.ou.error=Введите наименование подразделения.
+GenerateCertificateDialog.city.error=Введите город.
+GenerateCertificateDialog.state.error=Введите штат.
+GenerateCertificateDialog.country.error=Введите страну.
+
+SSLCertificate.button.deny=Отказать
+SSLCertificate.button.grant_always=Всегда разрешать
+SSLCertificate.button.grant_once=Разрешить для этого сеанса
+SSLCertificate.certificate.title=Сведения о сертификате
+SSLCertificate.new_certificate.title=Обнаружен новый сертификат
+SSLCertificate.replace_certificate.title=Обнаружен другой сертификат
+SSLCertificate.date_valid.label=Этот сертификат действителен с [^0] по [^1]
+SSLCertificate.issued_to.label=Сертификат:
+SSLCertificate.issued_from.label=Кем выдан:
+SSLCertificate.key_length.label=Размер ключа: [^0] бит
+SSLCertificate.key_strength.label=Стойкость шифра: [^0] бит
+SSLCertificate.fingerprint.label=Сигнатура сертификата:
+SSLCertificate.serial_number.label=Серийный номер:
+SSLCertificate.warning.title=Предупреждение о сертификате
+SSLCertificate.no_cert=Сервер не передал сертификат. Все равно продолжить?
+SSLCertificate.expired_cert=Срок действия сертификата сервера истек. Все равно продолжить?
+SSLCertificate.invalid_cert=Срок действия сертификата сервера еще не наступил. Все равно продолжить?
+SSLCertificate.host_mismatch=Узел, указанный в сертификате, не совпадает с узлом, с которым Вы пытаетесь соединиться. Все равно продолжить?
+SSLCertificate.null_cert=Сертификат пуст. Все равно продолжить?
+
+Update.title=Обновление программы
+Update.checkbox.auto=Автоматически проверять обновления
+Update.vurl=http://www.glub.com/cgi-bin/version_check.cgi?product=[^0]&version=[^1]&platform=[^2]&language=ru_RU
+Update.purl=http://www.glub.com/cgi-bin/transfer.cgi?transactionID=0&shortname=[^0]&os=[^1]&log_it=update_v[^2]&language=ru_RU
+Update.up_to_date=Последняя версия программы уже установлена.
+Update.new_version=Доступна новая версия: v[^0].\nЗагрузить обновление?
+Update.button.select_folder=Выбрать папку для обновления
+Update.success=Обновление успешно загружено в папку [^0]. Для успешного запуска программы установки необходимо выйти из текущей версии программы.
+Update.failed_to_connect=Не удалось соединиться с сервером.
+
+Prefs.title=Настройки
+Prefs.global_book_url=URL-адрес глобальных закладок:
+Prefs.proxy.title=Прокси-сервер SOCKS:
+Prefs.proxy_host=Имя узла:
+Prefs.proxy_port=Порт:
+Prefs.proxy_user=Имя пользователя:
+Prefs.proxy_pass=Пароль:
+Prefs.show_hidden_files=Отображать скрытые файлы
+Prefs.show_full_column_listing=Отображать развернутые сведения об удаленной папке
+Prefs.start_with_open=<html>Отображать диалоговое окно «Установление соединения»<br>при запуске программы</html>
+Prefs.check_for_updates=Проверять обновления при запуске программы
+Prefs.dont_show_again=Больше не показывать
+Prefs.close_tab_warning=Отображать предупреждение при отсоединении путем закрытия вкладки
+Prefs.use_mode_z_compression=Использовать сжатие в «Mode Z»
+Prefs.pasv_control_ip=<html>Принудительно использовать IP-адрес управляющего канала<br>для пассивного соединения, предназначенного для передачи данных</html>
+
+Registration.title=Регистрация Secure FTP
+Registration.license=Лицензия:
+Registration.licensed_to=Получатель лицензии:
+Registration.non_commercial=Некоммерческое использование
+Registration.organization=Организация:
+Registration.serial_number=Серийный номер:
+
+Beta.expired=Срок действия данной бета-версии истек. Посетите веб-узел Glub Tech и загрузите последнюю версию.
+
+Ad.ftpswrap=Защитите свой FTP с помощью Secure FTP Wrapper -
+#Ad.ftpswrap=Защитите свой FTP с помощью Secure FTP Wrapper. Для получения дополнительной информации посетите веб-узел:
+Ad.bean=Основана на программе Secure FTP Bean компании Glub Tech.

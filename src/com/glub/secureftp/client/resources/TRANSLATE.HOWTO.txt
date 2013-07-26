@@ -1,0 +1,106 @@
+Instructions on how to translate Secure FTP:
+
+Note: all files should be saved in UTF-8 format and as plain text (.txt/.html).
+
+--
+
+strings.properties:
+
+This file represents all of the text that appears in the client. Each line
+has two parts, the part to the left of the equal sign ("=") and the part
+to the right.
+
+The left side should _not_ be translated (it is the key). The right side
+_should_ be translated.
+
+For example:
+
+Menu.file=File
+
+The left side, Menu.file, is the "File" menu and displays the text "File".
+You should translate "File" into the appropriate language.
+
+A mnemonic is a character that will be used as a keyboard shortcut. In the
+case of "File" the mnemonic chosen is "F". This will allow Alt+F. If your
+translation doesn't have this character, you should use your best judgement
+to find a replacement character. It is important that within a menu, only
+one mnemonic is used.
+
+
+Wildcards:
+
+In some cases there are areas within some text where additional text will be
+placed during the running of the program. These areas are called wildcards.
+A wildcard looks like this:
+
+  [^#]
+
+where "#" is a number.
+
+It is important that these values stay the same. They can be moved around
+in the sentence to make sense.
+
+For example:
+
+  Connection failed: [^0]
+
+At run time you would see this as:
+
+  Conection failed: the server could not be reached.
+
+The text "the server could not be reached." would replace the value at [^0]
+
+
+Quoted words:
+
+A word that is quoted looks like this:
+
+  \"This word is quoted\"
+
+So, places where you would use a quotation mark should look like \"
+
+
+==
+
+SecureFTP.hs:
+
+This file is responsible for the main help navigation tree. The only items
+that need translating are the text between:
+
+  <title>[translate this stuff]</title>
+  <label>[translate this stuff]</label>
+
+
+==
+
+SecureFTPIndex.xml:
+
+This file contains the terms that show up in the help's index panel. The only
+items that need translating are:
+
+  <indexitem text="[translate this stuff]"
+
+
+==
+
+SecureFTPTOC.xml:
+
+This file contains the items that show up in the table of contents. The only
+items that need translating are:
+
+  <tocitem text="[translate this stuff]"
+
+
+==
+
+The files ending in .html:
+
+This is the bulk of the help content. All of the non-HTML tags need to be
+translated. If you are unsure what is an HTML tag, please email me so we can
+discuss it further.
+
+
+==
+
+Thank you for all your help.
+Mail: secureftp@glub.com

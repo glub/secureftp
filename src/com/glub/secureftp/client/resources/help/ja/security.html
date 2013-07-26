@@ -1,0 +1,52 @@
+<html>
+
+<head> <META http-equiv="Content-Type" content="text/html;
+charset=SJIS"> <LINK REL=STYLESHEET HREF="default.css" TYPE="text/css">
+</head>
+
+<body bgcolor="#ffffff"> <a name="ssl"></a> <h2>SSL とは？</h2>
+
+SSL (<strong>Secure Sockets Layer</strong>) とは、Netscape Communications
+社が開発した、情報を暗号化したり認証して, 安全に情報を送受信できる技術です。SSL
+は、ウェブブラウザや、ウェブサーバでの通信で、最もよく使用されています。（<i>https</i>で始まる URL は、SSL
+接続が使用されていることを示しています。）
+
+<br><br>
+
+Secure FTP は、これと同じ技術を拡張し、SSL を使用して接続する FTP サーバを提供し、安全なファイル転送を実現します。
+
+<a name="support"></a> <h2>サポート情報</h2>
+
+Secure FTP は、２種類の SSL 接続（Implicit と Explicit）を提供しています。
+
+<a name="implicit"></a> <h3>SSL (Implicit)</h3>
+
+Implicit セキュリティ（パッシブセキュリティ）は、接続が確立されるとすぐに SSL 接続を使用して開始します。Implicit
+セキュリティを使用すると、サーバは安全な接続を確立する為に、FTP クライアントへ異なるポート（通常はポート 990
+を使用）を定義します。<br> 注意：Implicit SSL は、当初、様々な FTP で定義されていましたが、今では勧められていません。
+
+<a name="explicit"></a> <h3>SSL (Explicit)</h3>
+
+Explicit セキュリティ（アクティブセキュリティ）は、基本の FTP 接続で開始し、安全なモードへ切り替えるために、特別なコマンド
+<strong>AUTH SSL</strong> をサーバへ送ります。詳しい仕様は、RFC 2228 に定義されています。
+
+<a name="client"></a> <h3>クライアント証明書</h3>
+
+クライアントを認証するには、SSL
+クライアント証明書を使用する方法もあります。この認証はログインする際に行われるのではなく、初回のセキュア接続が確立された際に行われます。
+
+<br><br>
+
+Secure FTP は、２通りのクライアント認証の設定と送信を提供しています。
+
+<ol> <li>自己署名で証明書を生成する。 この証明書は、いくつかの簡単な質問にお答えするだけで生成することができ、３年間有効です。<p>
+<li>管理者から発行されたキーと証明書を使用する。御社が独自の認証証明書をお持ちであれば、
+プライベートキーと公開証明書をクライアントに読み込めます。プライベートキーは、PKCS#12 キーストアのものであるか、PKCS#8
+のフォーマットでなければなりません。公開証明書または認証局の証明書は、PKCS#12 キーストアのものであるか、PEM もしくは、DER
+のフォーマットでなければなりません。<p> <li>証明書とキーがパスフレーズで保護されている場合は、適切な箇所に入力してください。 </ol>
+
+これらのオプションは、「<strong>ヘルプ</strong>」メニューの<strong>証明書の管理</strong>にあります。
+
+<br>
+
+</body> </html>

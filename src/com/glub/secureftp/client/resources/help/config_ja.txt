@@ -1,0 +1,9 @@
+File ja/bookmarks.html
+File ja/faq.html
+File ja/security.html
+File ja/compression.html
+File ja/transfer.html
+File ja/connection.html
+File ja/modes.html
+File ja/what_is_ftp.html
+File ja/navigation.html

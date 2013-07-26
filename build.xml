@@ -1,0 +1,284 @@
+<project name="secureftp" default="all">
+
+  <property environment="env"/>
+
+  <property name="SRC" value="src/"/>
+  <property name="BUILD" value="cls/"/>
+  <property name="DIST" value="dist/"/>
+
+  <property name="BEAN" value="com/glub/secureftp/bean/"/>
+  <property name="CLIENT" value="com/glub/secureftp/client/"/>
+  <property name="CLIENTIMAGES" value="com/glub/secureftp/client/gui/images"/>
+  <property name="COMMON" value="com/glub/secureftp/common/"/>
+  <property name="GLUBRES" value="com/glub/secureftp/client/resources/"/>
+  <property name="GLUBUI" value="com/glub/gui/"/>
+  <property name="GLUBNET" value="com/glub/net/"/>
+  <property name="GLUBUTIL" value="com/glub/util/"/>
+  <property name="GLUBJNI" value="com/glub/jni/"/>
+  <property name="BEANPKG" value="bean_package/"/>
+  <property name="EXAMPLES" value="com/glub/secureftp/examples/"/>
+
+  <path id="project.class.path">
+    <fileset dir="lib/">
+      <include name="**/*.jar"/>
+    </fileset>
+  </path>
+
+  <target name="all" depends="jar_client, language_kit"/>
+
+  <target name="init">
+     <tstamp/>
+     <mkdir dir="${BUILD}"/>
+     <mkdir dir="${BUILD}/examples"/>
+     <mkdir dir="${DIST}"/>
+  </target>
+
+  <target name="clean">
+    <delete dir="${BUILD}"/>
+  </target>
+
+  <target name="clean_client">
+    <delete dir="${BUILD}/com/glub/secureftp/client"/>
+  </target>
+
+  <target name="distclean" depends="clean">
+    <delete dir="${DIST}"/>
+  </target>
+
+  <target name="core" depends="init">
+    <javac target="1.4" source="1.4" srcdir="${SRC}/" destdir="${BUILD}/"
+           debug="on"
+           deprecation="on"
+           includeantruntime="false"
+           includes="${GLUBNET}/**,
+                     ${GLUBUTIL}/**,
+                     ${GLUBUI}/**, 
+                     ${GLUBJNI}/**,
+                     ${COMMON}/**">
+      <classpath refid="project.class.path"/>
+    </javac>
+
+    <copy todir="${BUILD}/${GLUBUI}/table/images/">
+      <fileset dir="${SRC}/${GLUBUI}/table/images/"/>
+    </copy>
+
+  </target>
+
+  <target name="examples" depends="bean">
+    <javac target="1.4" source="1.4" srcdir="${SRC}/${EXAMPLES}/" destdir="${BUILD}/" includeantruntime="false">
+      <classpath refid="project.class.path"/>
+    </javac>
+    <move todir="${BUILD}/examples">
+      <fileset dir="${BUILD}">
+        <include name="*.class"/>
+      </fileset>
+    </move>
+  </target>
+
+<!--
+           deprecation="on"
+-->
+
+  <target name="bean" depends="init, core">
+    <javac target="1.4" source="1.4" srcdir="${SRC}" destdir="${BUILD}/"
+           debug="off"
+           includeantruntime="false"
+           includes="${BEAN}/**">
+      <classpath refid="project.class.path"/>
+    </javac>
+  </target>
+
+  <target name="jar_bean" depends="bean, examples">
+    <propertyfile file="${SRC}/${BEAN}/build.info">
+      <entry key="build.date" type="date" value="now" pattern="yyyyMMdd"/>
+    </propertyfile>
+    <copy file="${SRC}/${BEAN}/build.info" todir="${BUILD}/${BEAN}"/>
+    <jar jarfile="${DIST}/gtftps.jar" basedir="${BUILD}"
+         excludes="**/Icon**, **/resources/**, **/jni/**, **/client/**, **/examples/**, **/gui/**"/>
+    <delete dir="${DIST}/docs/api/" verbose="false"/>
+    <mkdir  dir="${DIST}/docs/api/"/>
+    <javadoc destdir="${DIST}/docs/api" author="false" version="true"
+             use="true" windowtitle="Glub Tech Secure FTP Bean"
+             classpathref="project.class.path"
+             packagenames="com.glub.secureftp.bean.*" sourcepath="${SRC}">
+      <doctitle><![CDATA[<h1>Glub Tech Secure FTP Bean</h1>]]></doctitle>
+      <bottom><![CDATA[<i>Copyright &#169; 2000-12 
+                <a target="_top" href="http://www.glub.com">Glub Tech, Inc.</a> 
+                All Rights Reserved.</i>]]></bottom>
+      <group title="Bean Package" packages="com.glub.secureftp.bean.*"/>
+      <link href="http://java.sun.com/j2se/1.4/docs/api/"/>
+      <link href="http://jakarta.apache.org/regexp/apidocs/"/>
+    </javadoc>
+    <echo>Packaging bean...</echo>
+    <mkdir dir="${BEANPKG}/gtftps/docs"/>
+    <mkdir dir="${BEANPKG}/gtftps/lib"/>
+    <mkdir dir="${BEANPKG}/gtftps/examples"/>
+
+    <copy todir="${BEANPKG}/gtftps/docs/">
+      <fileset dir="${DIST}/docs/"/>
+    </copy>
+
+    <copy file="${DIST}/gtftps.jar" todir="${BEANPKG}/gtftps/lib/"/>
+    <copy file="lib/jakarta-regexp-1.5.jar" todir="${BEANPKG}/gtftps/lib/"/>
+
+    <copy todir="/servers/www/glub/htdocs/products/bean/examples">
+      <fileset dir="${SRC}/${EXAMPLES}">
+        <exclude name="**/Icon**, **/RCS/**"/>
+      </fileset>
+    </copy>
+
+    <copy todir="${BEANPKG}/gtftps/examples">
+      <fileset dir="${BUILD}/examples"/>
+      <fileset dir="${SRC}/${EXAMPLES}">
+        <exclude name="**/Icon**, **/RCS/**"/>
+      </fileset>
+    </copy>
+
+    <fixcrlf srcdir="${BEANPKG}/gtftps/examples/" eol="crlf" includes="*.java"/>
+
+	<mkdir dir="${BEANPKG}/hold/"/>
+	
+    <copy todir="${BEANPKG}/gtftps/examples">
+      <fileset dir="${BEANPKG}/hold/">
+        <include name="*.bat"/>
+      </fileset>
+    </copy>
+
+    <fixcrlf srcdir="${BEANPKG}/gtftps/" eol="crlf" includes="*.txt"/>
+
+    <zip zipfile="${DIST}/gtftps.zip" basedir="${BEANPKG}"
+         excludes="**/Icon**, **/hold/**"/>
+
+    <delete>
+      <fileset dir="${BEANPKG}/gtftps/examples/" includes="*.bat"/>
+    </delete>
+
+    <copy todir="${BEANPKG}/gtftps/examples">
+      <fileset dir="${BEANPKG}/hold/" includes="*.sh"/>
+    </copy>
+
+    <fixcrlf srcdir="${BEANPKG}/gtftps/examples/" eol="lf" includes="*.java"/>
+    <fixcrlf srcdir="${BEANPKG}/gtftps/" eol="lf" includes="*.txt"/>
+
+    <tar tarfile="${DIST}/gtftps.tar" basedir="${BEANPKG}"
+         excludes="**/Icon**, **/hold/**"/>
+    <gzip src="${DIST}/gtftps.tar" zipfile="${DIST}/gtftps.tar.gz"/>
+    <delete file="${DIST}/gtftps.tar"/>
+    <delete dir="${BEANPKG}"/>
+  </target>
+
+  <target name="client_framework" depends="core, bean">
+    <javac target="1.4" source="1.4" srcdir="${SRC}" destdir="${BUILD}/"
+           includeantruntime="false"
+           includes="${CLIENT}/framework/**, ${CLIENT}/gui/**, ${CLIENT}/util/**">
+      <classpath refid="project.class.path"/>
+    </javac>
+  </target>
+
+  <target name="client" depends="core, bean">
+    <javac debug="on" target="1.4" source="1.4" srcdir="${SRC}" destdir="${BUILD}/"
+           includeantruntime="false"
+           includes="${CLIENT}/**">
+      <classpath refid="project.class.path"/>
+    </javac>
+  </target>
+
+  <target name="jar_client" depends="gui_client, cli_client, jar_bean">
+    <buildnumber file="${SRC}/${CLIENT}/build.info"/>
+    <propertyfile file="${SRC}/${CLIENT}/build.info">
+     <entry key="build.date" type="date" value="now" pattern="yyyyMMdd"/>
+    </propertyfile>
+    <copy file="${SRC}/${CLIENT}/build.info" todir="${BUILD}/${CLIENT}/cli"/>
+    <copy file="${SRC}/${CLIENT}/build.info" todir="${BUILD}/${CLIENT}/gui"/>
+    <jar jarfile="${DIST}/secureftp2_phase1.jar" basedir="${BUILD}"
+         excludes="**/Icon**, **/jni/**, **/RCS/**, **/bean/**, **/wrapper/**, **/examples/**, **/.*.swp, **/client/gui/images/**, **/resources/**"/>
+    <jar jarfile="${DIST}/images.jar" basedir="${BUILD}"
+         excludes="**/resources/**" includes="**/client/gui/images/**"/>
+    <jar jarfile="${DIST}/resources.jar" basedir="${BUILD}"
+         includes="**/resources/**"/>
+    <unjar src="${DIST}/secureftp2_phase1.jar" dest="${DIST}/temp/"/>
+    <delete file="${DIST}/secureftp2_phase1.jar" verbose="false"/>
+    <echo>Repackaging client to have our manifest...</echo>
+    <jar jarfile="${DIST}/secureftp2.jar" basedir="${DIST}/temp"
+         excludes="${DIST}/META-INF"
+         manifest="manifest/secureftp_manifest.mf"/>
+    <delete dir="${DIST}/temp" verbose="false"/>
+
+    <echo>Packaging applet...</echo>
+    <mkdir dir="applet"/>
+    <copy file="templates/applet.html" todir="applet"/>
+    <copy file="lib/jakarta-regexp-1.5.jar" todir="applet"/>
+    <copy file="lib/jaxen-full.jar" todir="applet"/>
+    <copy file="lib/jdom.jar" todir="applet"/>
+    <copy file="lib/jh.jar" todir="applet"/>
+    <copy file="lib/saxpath.jar" todir="applet"/>
+    <copy file="${DIST}/secureftp2.jar" todir="applet"/>
+    <copy file="${DIST}/images.jar" todir="applet"/>
+    <copy file="${DIST}/resources.jar" todir="applet"/>
+    <copy file="${DIST}/gtftps.jar" todir="applet"/>
+
+    <fixcrlf srcdir="applet" eol="crlf" includes="*.html, *.txt"/>
+    <zip zipfile="${DIST}/applet.zip" basedir="." includes="applet/**"/>
+
+    <fixcrlf srcdir="applet" eol="lf" includes="*.html, *.txt"/>
+    <tar tarfile="${DIST}/applet.tar" basedir="." includes="applet/**"/>
+    <gzip src="${DIST}/applet.tar" zipfile="${DIST}/applet.tar.gz"/>
+    <delete file="${DIST}/applet.tar"/>
+
+    <delete dir="applet" verbose="false"/>
+  </target>
+
+  <target name="gui_client" depends="core, bean, client_framework">
+    <javac target="1.4" source="1.4" srcdir="${SRC}" destdir="${BUILD}/"
+           debug="on"
+           includeantruntime="false"
+           includes="${CLIENT}/gui/**">
+<!--
+      <compilerarg value="-Xlint:unchecked"/>
+-->
+      <classpath refid="project.class.path"/>
+    </javac>
+
+    <copy todir="${BUILD}/${GLUBRES}/">
+      <fileset dir="${SRC}/${GLUBRES}/">
+        <include name="**.properties"/>
+      </fileset>
+    </copy>
+
+    <copy todir="${BUILD}/${GLUBRES}/help/">
+      <fileset dir="${SRC}/${GLUBRES}/help/">
+	<exclude name="config**.txt"/>
+      </fileset>
+    </copy>
+
+    <copy todir="${BUILD}/${CLIENT}/gui/images/">
+      <fileset dir="${SRC}/${CLIENT}/gui/images/"/>
+    </copy>
+  </target>
+
+  <target name="cli_client" depends="core, bean, client_framework">
+    <javac target="1.4" source="1.4" srcdir="${SRC}" destdir="${BUILD}/"
+           debug="off"
+           includeantruntime="false"
+           includes="${CLIENT}/cli/**">
+      <classpath refid="project.class.path"/>
+    </javac>
+  </target>
+
+  <target name="language_kit">
+    <mkdir dir="${DIST}/language_kit/"/>
+    <copy file="${SRC}/${GLUBRES}/TRANSLATE.HOWTO.txt" todir="${DIST}/language_kit"/>
+    <copy file="${SRC}/${GLUBRES}/strings.properties" todir="${DIST}/language_kit"/>
+    <copy file="${SRC}/${GLUBRES}/help/SecureFTP.hs" todir="${DIST}/language_kit"/>
+    <copy file="${SRC}/${GLUBRES}/help/SecureFTPIndex.xml" todir="${DIST}/language_kit"/>
+    <copy file="${SRC}/${GLUBRES}/help/SecureFTPTOC.xml" todir="${DIST}/language_kit"/>
+    <copy todir="${DIST}/language_kit">
+      <fileset dir="${SRC}/${GLUBRES}/help/en">
+        <exclude name="**/images/**"/>
+      </fileset>
+    </copy>
+    <fixcrlf srcdir="${DIST}/language_kit" eol="crlf"/>
+    <zip zipfile="${DIST}/language_kit.zip" basedir="${DIST}" includes="language_kit/**"/>
+    <delete dir="${DIST}/language_kit"/>
+  </target>
+</project>
