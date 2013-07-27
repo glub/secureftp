@@ -29,7 +29,6 @@ public class PreferencesCommand extends LocalCommand {
   private JCheckBox showFullColumnCheckBox = null;
   private JCheckBox modeZCheckBox = null;
   private JCheckBox startOpenCheckBox = null;
-  private JCheckBox checkUpdateCheckBox = null;
   private JCheckBox closeTabWarningCheckBox = null;
   private JCheckBox forcePasvToUseControlCheckBox = null;
 
@@ -61,8 +60,6 @@ public class PreferencesCommand extends LocalCommand {
                               getForcePasvToUseControlCheckBox().isSelected() );
     Client.setUseProxy(getProxyHostField().getText().trim().length() > 0 &&
                             getProxyPortField().getText().trim().length() > 0); 
-    if (Client.getClientType() == Client.APPLICATION)
-      Client.setAutoCheckForUpdate( getCheckUpdateCheckBox().isSelected() );
 
     PreferencesDispatcher.doWritePrefs();
 
@@ -174,12 +171,6 @@ public class PreferencesCommand extends LocalCommand {
 
     panel.add( getForcePasvToUseControlCheckBox() );
     components++;
-
-
-    if (Client.getClientType() == Client.APPLICATION) {
-      panel.add( getCheckUpdateCheckBox() );
-      components++;
-    }
 
     SpringUtilities.makeCompactGrid( panel,
                                      components, 1,    // rows, cols
@@ -304,18 +295,6 @@ public class PreferencesCommand extends LocalCommand {
     }
     
     return startOpenCheckBox;
-  }
-
-  protected JCheckBox getCheckUpdateCheckBox() {
-    if ( null == checkUpdateCheckBox ) {
-      LString item = new LString("Prefs.check_for_updates", 
-                                 "Check for Updates on Startup");
-      checkUpdateCheckBox = new JCheckBox( item.getString() );
-      checkUpdateCheckBox.setSelected(Client.autoCheckForUpdate());
-      checkUpdateCheckBox.setEnabled(!GTOverride.getBoolean("glub.disableUpdates"));
-    }
-    
-    return checkUpdateCheckBox;
   }
 
   protected JCheckBox getCloseTabWarningCheckBox() {

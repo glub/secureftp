@@ -81,7 +81,7 @@ public class SplashScreen {
         " ",
         LString.getString("Ad.bean", "Based on Glub Tech's Secure FTP Bean."),
         " ",
-        "http://secureftp.glub.com",
+        "http://github.com/glub/secureftp",
         " ",
         System.getProperty("java.vendor") + " Java v" + System.getProperty("java.version"),
         " ",
@@ -180,11 +180,8 @@ public class SplashScreen {
         label = new JLabel( (ImageIcon)items[i] );
       }
       else if ( attrib[i] == HYPERLINK ) {
-        String displayURL = items[i].toString();
-
-        String actualURL = displayURL + "/" + "?product=" + Version.UPDATE_ID + "&version=" + Version.VERSION + "&platform=" + Util.getPlatform() + "&language=" + Util.getLanguage();
-
-        label = new GTLink( displayURL, actualURL );
+        String url = items[i].toString();
+        label = new GTLink( url, url );
       }
       else {
         label = new JLabel( items[i].toString() );

@@ -324,8 +324,6 @@ public class SecureFTP {
 
     out.println("");
     out.println("Thank you for using " + SecureFTP.PROGRAM_NAME + ".");
-    out.print("Be sure and check out our other secure software at ");
-    out.println("http://www.glub.com");
 
     if ( !scripted ) {
       try {
